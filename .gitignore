@@ -45,6 +45,7 @@ Thumbs.db
 ##########
 data/
 *.pyc
+*/__pycache__/*
 *.xlsx
 *.ipynb_checkpoints*
 .vscode/tags
