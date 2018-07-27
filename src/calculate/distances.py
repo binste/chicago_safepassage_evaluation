@@ -1,5 +1,8 @@
 """Contains function for calculating distance between two GPS coordinates.
-This is only used for some exploratory analysis and not for final analysis."""
+This is only used for some exploratory analysis and not for final analysis.
+
+You could add the jit decorator of the numba package for a huge speed up
+on the performance. Remember to first install the package."""
 from math import atan, atan2, cos, radians, sin, sqrt, tan
 
 
