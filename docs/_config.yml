@@ -1,0 +1,15 @@
+theme: minima
+title: "Chicago's Safe Passage Program to Prevent Crime: Is It Worth the Dime?"
+author: "Stefan Binder"
+
+header_pages:
+  - 1_Introduction.md
+  - 2_Estimation.md
+
+exclude:
+  - README.md
+
+markdown: kramdown
+
+github_username: binste
+linkedin_username: stefan-binder-36b013130
