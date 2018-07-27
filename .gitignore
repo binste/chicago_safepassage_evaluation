@@ -54,7 +54,6 @@ data/
 *.json
 docs/_site/*
 *.lock
-*.png
 
 # Can be deleted before submitting to University
 reports/appendix/*
