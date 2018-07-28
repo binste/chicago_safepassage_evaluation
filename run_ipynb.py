@@ -35,7 +35,7 @@ def validate_input(input_args):
     if len(input_args) == 1:
         raise Exception('You need to specify either one or multiple folders ' +
                         f'inside "./{str(notebooks_path)}" to run')
-    # If folders ar given, first check if they exist, else stop
+    # If folders are given, first check if they exist, else stop
     folders = [Path(f) for f in input_args[1:]]
     for f in folders:
         if not (notebooks_path / f).is_dir():
