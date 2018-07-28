@@ -2,10 +2,10 @@
 WORK IN PROGRESS
 
 
-Main figures and results: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binste/chicago_safepassage_evaluation/master?filepath=notebooks%2F5_analysis%2F0.0-binste-replication-of-crime-results-McMillen-et-al-2017-census-block-level.ipynb){:target="_blank"}
+Main figures and results: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binste/chicago_safepassage_evaluation/master?filepath=notebooks%2F5_analysis%2F0.0-binste-replication-of-crime-results-McMillen-et-al-2017-census-block-level.ipynb)
 
 
-Additional figures: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binste/chicago_safepassage_evaluation/master?filepath=notebooks%2F5_analysis%2F1.0-binste-additional-figures-website.ipynb){:target="_blank"}
+Additional figures: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binste/chicago_safepassage_evaluation/master?filepath=notebooks%2F5_analysis%2F1.0-binste-additional-figures-website.ipynb)
 
 
 
