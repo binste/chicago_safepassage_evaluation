@@ -39,6 +39,6 @@ The rest of the notebooks can be run in order of their numbers. To run a whole f
 python run_ipynb.py 1_prepare_data 2_crime_database 3_match 4_combine_for_analysis 5_analysis
 ```
 
-This can take up to multiple hours, depending on your hardware! The analysis is tested on a computer which had 16 GB RAM.
+This can take up to multiple hours, depending on your hardware!
 
-
+I used a MacBook Pro 3.1 GHz Intel Core i5 with 16 GB RAM.
