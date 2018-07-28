@@ -7,7 +7,7 @@ Example
 -------
 If you want to run all Jupyter notebooks in "notebooks/0_prepare_data", run:
 
-$ python exec_ipynb.py 0_prepare_data
+$ python run_ipynb.py 0_prepare_data
 """
 import sys
 from pathlib import Path
