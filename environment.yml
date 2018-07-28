@@ -19,7 +19,6 @@ dependencies:
   - vega3=0.13.0
   - vega_datasets=0.5.0
   - fiona=1.7.10
-  - gdal=2.2.4
   - geopandas=0.3.0
   - geos=3.6.2
   - geotiff=1.4.2
