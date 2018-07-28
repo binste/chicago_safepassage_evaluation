@@ -2,7 +2,6 @@ name: speval
 channels:
   - r
   - conda-forge
-  - defaults
 dependencies:
   - altair=2.1.0
   - feather-format=0.4.0
