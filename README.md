@@ -6,7 +6,7 @@ This repository contains an analysis of the effect of Chicago's Safe Passage pro
 
 The empirical approach chosen for this analysis follows one of the specifications in a paper called ["Do More Eyes on the Street Reduce Crime? Evidence from Chicago’s Safe Passage Program"](https://ignaciomsarmiento.github.io/assets/Safe_Passage_WP.pdf) by Daniel McMillen, Ignacio Sarmiento-Barbieri, and Ruchi Singh from June 22, 2017. It can therefore be seen as an attempt to replicate some of their main findings.
 
-Head over to the website of this project, to get an introduction into the topic and a summary of the results.
+Head over to the [website](https://binste.github.io/chicago_safepassage_evaluation/) of this project, to get an introduction into the topic and a summary of the results.
 
 For a more detailed description of the data used, the empirical strategy as well as its limitations, see the Appendix (XXX)
 
@@ -29,5 +29,3 @@ Due to resource constraints on the above used service, to run the whole analysis
 4. After it run through, there is an URL which will lead you to XXX
 
 If it does not work, go into Docker preferences and increase resources. XXX what do I have?
-
-[Website](https://binste.github.io/chicago_safepassage_evaluation/)
