@@ -10,7 +10,7 @@ Head over to the [website](https://binste.github.io/chicago_safepassage_evaluati
 
 For a more detailed description of the data used, the empirical strategy as well as its limitations, see the Appendix (XXX)
 
-## Replicate this analysis
+## Replicate analysis
 Using the two badges below, you can replicate the last stages of the analysis directly in your browser without any setup required.
 
 
@@ -26,6 +26,19 @@ Due to resource constraints on the above used service, to run the whole analysis
 1. Install the [Docker Community Edition](https://store.docker.com/search?type=edition&offering=community)
 2. Install repo2docker: `pip install jupyter-repo2docker`
 3. Build and launch docker image of GitHub repository: `jupyter-repo2docker https://github.com/binste/chicago_safepassage_evaluation`
-4. After it run through, there is an URL which will lead you to XXX
+4. After it run through, there is an URL which will lead you to a Jupyter notebook server in the root directory of the project.
 
 If it does not work, go into Docker preferences and increase resources. XXX what do I have?
+
+### Workflow
+You should now be able to run all the notebooks in the folder `notebooks`. The notebook in the folder `0_download_data` does not need to be run, as all the raw data files are already provided.
+
+The rest of the notebooks can be run in order of their numbers. To run a whole folder at a time, you can use the Python script `run_ipynb.py` which resides in the root folder of the project. In the "Home" view of Jupyter notebook (where you can open files), click on the top right on "New" -> "Terminal". Now you should be able to run the following command to rerun the whole analysis from the raw data files to the end results:
+
+```bash
+python run_ipynb.py 1_prepare_data 2_crime_database 3_match 4_combine_for_analysis 5_analysis
+```
+
+This can take up to multiple hours, depending on your hardware! The analysis is tested on a computer which had 16 GB RAM.
+
+
