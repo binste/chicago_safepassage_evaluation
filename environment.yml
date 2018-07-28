@@ -171,7 +171,6 @@ dependencies:
   - r-odbc=1.1.2
   - r-openssl=0.9.9
   - r-packrat=0.4.8_1
-  - r-pbdzmq=0.3_0
   - r-pillar=1.0.1
   - r-pkgconfig=2.0.1
   - r-pki=0.1_5.1
