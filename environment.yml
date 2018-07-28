@@ -168,7 +168,6 @@ dependencies:
   - r-nlme=3.1_131
   - r-nnet=7.3_12
   - r-numderiv=2016.8_1
-  - r-odbc=1.1.2
   - r-openssl=0.9.9
   - r-packrat=0.4.8_1
   - r-pillar=1.0.1
