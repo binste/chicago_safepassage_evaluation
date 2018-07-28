@@ -213,7 +213,6 @@ dependencies:
   - r-shiny=1.0.5
   - r-sfsmisc=1.1_1
   - r-sourcetools=0.1.6
-  - r-sparklyr=0.8.2
   - r-spatial=7.3_11
   - r-stringi=1.1.6
   - r-stringr=1.2.0
