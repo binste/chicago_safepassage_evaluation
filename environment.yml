@@ -71,7 +71,6 @@ dependencies:
   - pyopenssl=18.0.0
   - python=3.6.5
   - python-dateutil=2.7.3
-  - python.app=2=py36_8
   - qt=5.9.6
   - qtconsole=4.3.1
   - readline=7.0
