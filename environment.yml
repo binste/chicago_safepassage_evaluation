@@ -195,7 +195,6 @@ dependencies:
     - attrs==17.4.0
     - branca==0.2.0
     - cython==0.28.2
-    - folium==0.5.0
     - geopy==1.11.0
     - itsdangerous==0.24
     - more-itertools==4.1.0
@@ -203,5 +202,4 @@ dependencies:
     - py==1.5.3
     - python-utils==2.3.0
     - tables==3.4.4
-    - yapf==0.20.1
 
