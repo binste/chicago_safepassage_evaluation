@@ -56,5 +56,5 @@ data/
 docs/_site/*
 *.lock
 
-# Can be deleted before submitting to University
+# TODO: Can be deleted before submitting to University
 reports/appendix/*
