@@ -56,5 +56,8 @@ data/
 docs/_site/*
 *.lock
 
+# Ignore crimes dataset as it is too big for GitHub
+data/raw/Crimes_-_2001_to_present.csv
+
 # TODO: Can be deleted before submitting to University
 reports/appendix/*
