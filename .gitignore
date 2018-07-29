@@ -43,7 +43,6 @@ Thumbs.db
 
 # Others #
 ##########
-data/
 *.pyc
 */__pycache__/*
 *.xlsx
