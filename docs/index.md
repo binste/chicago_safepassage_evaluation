@@ -4,7 +4,7 @@ title: Introduction
 **ATTENTION**: This is a work in progress and subject to major changes.
 
 
-The final steps to obtain the figures used on this website can be reproduced directly in your browser without any setup needed by clicking on [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binste/chicago_safepassage_evaluation/master?filepath=notebooks%2F5_analysis%2F0.0-binste-analyze-crime-results-census-block-level.ipynb){:target="_blank"}. If you want to rerun the estimation or even start out from the raw data files, visit the [GitHub repository](https://github.com/binste/chicago_safepassage_evaluation) for instructions.
+The final steps to obtain the figures used on this website can be reproduced directly in your browser without any setup needed by clicking on [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binste/chicago_safepassage_evaluation/master?filepath=notebooks%2F5_analysis%2F1.0-binste-analyze-crime-results-census-block-level.ipynb){:target="_blank"}. If you want to rerun the estimation or even start out from the raw data files, visit the [GitHub repository](https://github.com/binste/chicago_safepassage_evaluation) for instructions.
 
 ## Crime in Chicago
 {% comment %}

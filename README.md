@@ -11,13 +11,9 @@ Head over to the [website](https://binste.github.io/chicago_safepassage_evaluati
 For a more detailed description of the data used, the empirical strategy as well as its limitations, see the Appendix (XXX)
 
 ## Replicate analysis
-Using the two badges below, you can replicate the last stages of the analysis directly in your browser without any setup required.
+By clicking on the badge below, you can replicate the figures used on the website analysis directly in your browser without any setup required and compare the results to the ones of McMillen et al. (2017).
 
-
-Main figures and results: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binste/chicago_safepassage_evaluation/master?filepath=notebooks%2F5_analysis%2F0.0-binste-replication-of-crime-results-McMillen-et-al-2017-census-block-level.ipynb)
-
-
-Additional figures: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binste/chicago_safepassage_evaluation/master?filepath=notebooks%2F5_analysis%2F1.0-binste-additional-figures-website.ipynb)
+(https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binste/chicago_safepassage_evaluation/master?filepath=notebooks%2F5_analysis%2F1.0-binste-analyze-crime-results-census-block-level.ipynb)
 
 
 ### Repo2docker
