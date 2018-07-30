@@ -1,11 +1,10 @@
 ---
 title: Introduction
 ---
-# ATTENTION: WORK IN PROGRESS
+**ATTENTION**: This is a work in progress and subject to major changes.
 
 
-
-The figures and results of this analysis can be reproduced directly in your browser by clicking on the "launch binder" badges below. If you want to reproduce the main findings from the beginning, visit the corresponding [GitHub repository](https://github.com/binste/chicago_safepassage_evaluation).
+The final steps to obtain the figures used on this website as well as the results can be reproduced directly in your browser by clicking on the "launch binder" badges below. If you want to reproduce the main findings starting out from the raw data files, visit the corresponding [GitHub repository](https://github.com/binste/chicago_safepassage_evaluation) for instructions.
 
 Main figures and results: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binste/chicago_safepassage_evaluation/master?filepath=notebooks%2F5_analysis%2F0.0-binste-replication-of-crime-results-McMillen-et-al-2017-census-block-level.ipynb){:target="_blank"}
 
@@ -19,9 +18,9 @@ Need better start
 Chicago suffers from very high homicide rates.[^1]. In 2017, on average every 13 hours a person was murdered in Chicago and every 2 hours and 30 minutes someone was shot[^2]. The figure below shows, that a few years ago this was even worse. Both violent as well as property crimes dropped significantly until around 2014, 2015. But since then, they slightly picked up again.
 
 {% include yearly_violent_trend.html %}
-<small>*Data source: [Crimes - 2001 to present, Chicago Data Portal; accessed January 25, 2018](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2)*</small>
+<small>*Data source: [Crimes - 2001 to present, Chicago Data Portal; accessed January 25, 2018](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2)*<br />
+*The distinction made in the figure between property and violent crimes follows the [National Incident-Based Reporting System (NIBRS)](http://gis.chicagopolice.org/clearmap_crime_sums/crime_types.html) of the Federal Bureau of Investigation (FBI).*</small>
 
-The distinction made in the figure between property and violent crimes follows the [National Incident-Based Reporting System (NIBRS)](http://gis.chicagopolice.org/clearmap_crime_sums/crime_types.html) of the Federal Bureau of Investigation (FBI).
 
 Of the two categories, violent crimes are of special interest for this analysis, as they represent the crimes which should be prevented by the analyzed crime prevention program. Let us therefore zoom a bit more into the intra-year and intra-day variation of violent crimes.
 
@@ -48,7 +47,7 @@ Note that, to make a full evaluation of the program, one would also need to look
 ## Contribution
 In the spring of 2017 I started a preliminary analysis on this topic as a project for a university course. When I decided to pick it up again for my master thesis, I found the working paper "Do More Eyes on the Street Reduce Crime? Evidence from Chicago’s Safe Passage Program" by Daniel McMillen, Ignacio Sarmiento-Barbieri, and Ruchi Singh from June 22, 2017.[^8] Their analysis finds a reduction in violent crime counts along Safe Passage routes of around 14%.
 
-My chosen analytical approach in the following closely follows their specification with census blocks as the observational unit and can be seen as an attempt to replicate some of the findings concerning the reduction in crime.
+My chosen analytical approach in the following closely follows their specification with census blocks as the observational unit and can be seen as an attempt to replicate some of the findings concerning the reduction in crime. A direct comparison of a few descriptive figures, tables, and the main results can be obtained by clicking on the first "launch binder" badge above.
 
 [Continue to "Estimation and results"](./estimation_and_results.md)
 
