@@ -46,7 +46,6 @@ Thumbs.db
 data/interim/*
 *.pyc
 */__pycache__/*
-*.xlsx
 *.ipynb_checkpoints*
 .vscode/tags
 *.feather
