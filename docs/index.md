@@ -17,11 +17,13 @@ Chicago suffers from very high homicide rates.[^1]. In 2017, on average every 13
 *The distinction made in the figure between property and violent crimes follows the [National Incident-Based Reporting System (NIBRS)](http://gis.chicagopolice.org/clearmap_crime_sums/crime_types.html) of the Federal Bureau of Investigation (FBI).*</small>
 
 
-Of the two categories, violent crimes are of special interest for this analysis, as they represent the crimes which should be prevented by the analyzed crime prevention program. Let us therefore zoom a bit more into the intra-year and intra-day variation of violent crimes.
+Of the two categories, violent crimes are of special interest for this analysis, as they represent the crimes which should be prevented by the analyzed crime prevention program. Let us therefore zoom a bit more into the intra-year and intra-day variation of violent crimes with the figure below.
+
+Note that, if you want to see the intra-day variation in the lower figure with data only for one year, you can select a single year by clicking on a square corresponding to that year in the upper figure. The lower one will adapt accordingly.
 
 {% include violent_trend.html %}
 
-In the upper figure we can again clearly see the decline in violent crime until 2014. Furthermore, a seasonal pattern shows where crime rates are relatively higher in the summer compared to the winter months. The lower figure depicts the intra-day variation depending on the month. We see a strong increase in crime during the late evening hours. If you want to see the intra-day variation in the lower figure with data only for one year, you can select a single year by clicking on a square corresponding to that year in the upper figure. The lower one will adapt accordingly.
+In the upper figure we can again clearly see the decline in violent crime until 2014. Furthermore, a seasonal pattern shows where crime rates are relatively higher in the summer compared to the winter months. The lower figure depicts the intra-day variation depending on the month. We see a strong increase in crime during the late evening hours.
 
 ## Chicago's Safe Passage program
 Due to Chicago's notorious problem with crime and various incidents including students, the City of Chicago launched the Safe Passage program in 2009 for 35 schools. The goal of the program is to keep the students safe on their way to school, thereby giving them the chance to focus more on their studies.[^10] This should eventually show in reduced violent crime rates as well as an increase in school attendance.
