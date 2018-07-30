@@ -43,20 +43,22 @@ Thumbs.db
 
 # Others #
 ##########
+data/interim/*
 *.pyc
 */__pycache__/*
 *.xlsx
 *.ipynb_checkpoints*
 .vscode/tags
-*.pkl
 *.feather
 *.Rhistory
 *.json
 docs/_site/*
 *.lock
+data/interim/est_df*
 
 # Ignore crimes dataset as it is too big for GitHub
 data/raw/Crimes_-_2001_to_present.csv
+data/processed/crimes.db
 
 # TODO: Can be deleted before submitting to University
 reports/appendix/*
