@@ -11,13 +11,14 @@ Head over to the [website](https://binste.github.io/chicago_safepassage_evaluati
 For a more detailed description of the data used, the empirical strategy as well as its limitations, see the Appendix (XXX)
 
 ## Replicate analysis
+### Figures for website and comparison to McMillen et al. (2017)
 By clicking on the badge below, you can replicate the figures used on the website analysis directly in your browser without any setup required and compare the results to the ones of McMillen et al. (2017).
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binste/chicago_safepassage_evaluation/master?filepath=notebooks%2F5_analysis%2F1.0-binste-analyze-crime-results-census-block-level.ipynb)
 
 
-### Repo2docker
-Due to resource constraints on the above used service, to run the whole analysis starting out from the raw data files, you can use the amazing tool repo2docker. It will copy the repository on your own computer and setup everything for you in an isolated environment (using docker).
+### Run analysis on your own machine
+Due to resource constraints on the above used service, to run the estimations of the poisson regressions or even start out from the raw data files, you need to do this on your local machine. However, this is rather convenient with the amazing tool repo2docker. It will copy the repository on your own computer and setup everything for you in an isolated environment (using docker).
 
 1. Install the [Docker Community Edition](https://store.docker.com/search?type=edition&offering=community)
 2. Install repo2docker: `pip install jupyter-repo2docker`
@@ -25,6 +26,19 @@ Due to resource constraints on the above used service, to run the whole analysis
 4. After it run through, there is an URL which will lead you to a Jupyter notebook server in the root directory of the project.
 
 If it does not work, go into Docker preferences and increase resources. XXX what do I have?
+
+Note however, that this will not allow you to save changes you make to the files as you're used to. If you want to continue working on this project, your best option is to clone the repository by running
+
+```bash
+git clone https://github.com/binste/chicago_safepassage_evaluation
+```
+
+And then install and activate the conda environment by running
+
+```bash
+conda env create -f environment.yml
+source activate speval
+```
 
 ### Workflow
 You should now be able to run all the notebooks in the folder `notebooks`. The notebook in the folder `0_download_data` will by default only download the crime dataset, as all others are already provided. The crime dataset is over 1.5 GB and could therefore not be hosted on GitHub. However, it should not change much for the years used in this analysis and therefore a download from the original source should work.
