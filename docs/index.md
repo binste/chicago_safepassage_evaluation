@@ -4,12 +4,7 @@ title: Introduction
 **ATTENTION**: This is a work in progress and subject to major changes.
 
 
-The final steps to obtain the figures used on this website as well as the results can be reproduced directly in your browser by clicking on the "launch binder" badges below. If you want to reproduce the main findings starting out from the raw data files, visit the corresponding [GitHub repository](https://github.com/binste/chicago_safepassage_evaluation) for instructions.
-
-Main figures and results: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binste/chicago_safepassage_evaluation/master?filepath=notebooks%2F5_analysis%2F0.0-binste-replication-of-crime-results-McMillen-et-al-2017-census-block-level.ipynb){:target="_blank"}
-
-
-Additional figures: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binste/chicago_safepassage_evaluation/master?filepath=notebooks%2F5_analysis%2F1.0-binste-additional-figures-website.ipynb){:target="_blank"}
+The final steps to obtain the figures used on this website as well as the main results can be reproduced directly in your browser without any setup needed by clicking on [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binste/chicago_safepassage_evaluation/master?filepath=notebooks%2F5_analysis%2F0.0-binste-crime-results-census-block-level.ipynb){:target="_blank"}. You can also inspect the final dataset used for the estimation. If you want to reproduce the main findings starting out from the raw data files, visit the corresponding [GitHub repository](https://github.com/binste/chicago_safepassage_evaluation) for instructions.
 
 ## Crime in Chicago
 {% comment %}
@@ -47,7 +42,7 @@ Note that, to make a full evaluation of the program, one would also need to look
 ## Contribution
 In the spring of 2017 I started a preliminary analysis on this topic as a project for a university course. When I decided to pick it up again for my master thesis, I found the working paper "Do More Eyes on the Street Reduce Crime? Evidence from Chicago’s Safe Passage Program" by Daniel McMillen, Ignacio Sarmiento-Barbieri, and Ruchi Singh from June 22, 2017.[^8] Their analysis finds a reduction in violent crime counts along Safe Passage routes of around 14%.
 
-My chosen analytical approach in the following closely follows their specification with census blocks as the observational unit and can be seen as an attempt to replicate some of the findings concerning the reduction in crime. A direct comparison of a few descriptive figures, tables, and the main results can be obtained by clicking on the first "launch binder" badge above.
+My chosen analytical approach in the following closely follows their specification with census blocks as the observational unit and can be seen as an attempt to replicate some of the findings concerning the reduction in crime. A direct comparison of a few descriptive figures, tables, and the main results can be obtained by clicking on the "launch binder" badge at the beginning of the page.
 
 [Continue to "Estimation and results"](./estimation_and_results.md)
 
