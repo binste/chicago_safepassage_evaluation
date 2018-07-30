@@ -1,8 +1,8 @@
 # Chicago's Safe Passage Program to Prevent Crime: Is It Worth the Dime?
-WORK IN PROGRESS
+**ATTENTION**: This is a work in progress and subject to major changes.
 
 
-This repository contains an analysis of the effect of Chicago's Safe Passage program on violent crime counts along the guarded routes. The beforementioned program aims at keeping the students safe on their way to school. The policy evaluation is one of two parts of my master thesis at the University of Zurich under the supervision of [Prof. Pietro Biroli](https://sites.google.com/site/pietrobiroli/home). The second one is a [basic guide to doing reproducible research](https://binste.github.io/basic_reproducibility_guide/), where this analysis serves as an example.
+This repository contains an analysis of the effect of Chicago's Safe Passage program on violent crime counts along the guarded routes. The before mentioned program aims at keeping the students safe on their way to school. The policy evaluation is one of two parts of my master thesis (2018) at the University of Zurich under the supervision of [Prof. Pietro Biroli](https://sites.google.com/site/pietrobiroli/home). The second one is [A Basic Guide to Reproducible Research](https://binste.github.io/basic_reproducibility_guide/), where this analysis serves as an example.
 
 The empirical approach chosen for this analysis follows one of the specifications in a paper called ["Do More Eyes on the Street Reduce Crime? Evidence from Chicago’s Safe Passage Program"](https://ignaciomsarmiento.github.io/assets/Safe_Passage_WP.pdf) by Daniel McMillen, Ignacio Sarmiento-Barbieri, and Ruchi Singh from June 22, 2017. It can therefore be seen as an attempt to replicate some of their main findings.
 
