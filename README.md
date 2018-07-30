@@ -31,12 +31,12 @@ Due to resource constraints on the above used service, to run the whole analysis
 If it does not work, go into Docker preferences and increase resources. XXX what do I have?
 
 ### Workflow
-You should now be able to run all the notebooks in the folder `notebooks`. The notebook in the folder `0_download_data` does not need to be run, as all the raw data files are already provided.
+You should now be able to run all the notebooks in the folder `notebooks`. The notebook in the folder `0_download_data` will by default only download the crime dataset, as all others are already provided. The crime dataset is over 1.5 GB and could therefore not be hosted on GitHub. However, it should not change much for the years used in this analysis and therefore a download from the original source should work.
 
-The rest of the notebooks can be run in order of their numbers. To run a whole folder at a time, you can use the Python script `run_ipynb.py` which resides in the root folder of the project. In the "Home" view of Jupyter notebook (where you can open files), click on the top right on "New" -> "Terminal". Now you should be able to run the following command to rerun the whole analysis from the raw data files to the end results:
+The notebooks can be run in order of their numbers. To run a whole folder at a time, you can use the Python script `run_ipynb.py` which resides in the root folder of the project. In the "Home" view of Jupyter notebook (where you can open files), click on the top right on "New" -> "Terminal". Now you should be able to run the following command to rerun the whole analysis from the raw data files to the end results:
 
 ```bash
-python run_ipynb.py 1_prepare_data 2_crime_database 3_match 4_combine_for_analysis 5_analysis
+python run_ipynb.py 0_download_data 1_prepare_data 2_crime_database 3_match 4_combine_for_analysis 5_analysis
 ```
 
 This can take up to multiple hours, depending on your hardware!
