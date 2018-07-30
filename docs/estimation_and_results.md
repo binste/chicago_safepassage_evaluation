@@ -32,7 +32,7 @@ The reason, why the comparison blocks are split up into three groups, depending 
 To compare treated and control blocks, we can plot the evolution of their violent crime counts over time. I do this in the following figure, with the years being relative to the implementation of the Safe Passage program of the corresponding "Treated" block.
 
 {% include did_figure_violent.html %}
-<small>*Due to the need for this figure to assign each block exactly one group, the data used here is not exactly representative of the one used in the final estimation of the effect. However, it can serve as a close approximation.</small>
+<small>*Due to the need for this figure to assign each block exactly one group, the data used here is not exactly representative of the one used in the final estimation of the effect. However, it can serve as a close approximation.*</small>
 
 First, we see that the trends in crimes are similar before the implementation of the program, although the changes are slightly stronger in magnitude for the "Treated" blocks. This can serve as a reassurance, that you have chosen a reasonable comparison group. However, we also see that the "Treated" blocks in general have a higher crime-count, which might pose a danger to our strategy. Again I refer to the Appendix XXX for additional information.
 
