@@ -4,7 +4,7 @@ title: Introduction
 **ATTENTION**: This is a work in progress and subject to major changes.
 
 
-The final steps to obtain the figures used on this website as well as the main results can be reproduced directly in your browser without any setup needed by clicking on [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binste/chicago_safepassage_evaluation/master?filepath=notebooks%2F5_analysis%2F0.0-binste-crime-results-census-block-level.ipynb){:target="_blank"}. You can also inspect the final dataset used for the estimation. If you want to reproduce the main findings starting out from the raw data files, visit the corresponding [GitHub repository](https://github.com/binste/chicago_safepassage_evaluation) for instructions.
+The final steps to obtain the figures used on this website can be reproduced directly in your browser without any setup needed by clicking on [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binste/chicago_safepassage_evaluation/master?filepath=notebooks%2F5_analysis%2F0.0-binste-analyze-crime-results-census-block-level.ipynb){:target="_blank"}. If you want to rerun the estimation or even start out from the raw data files, visit the [GitHub repository](https://github.com/binste/chicago_safepassage_evaluation) for instructions.
 
 ## Crime in Chicago
 {% comment %}
@@ -21,7 +21,7 @@ Of the two categories, violent crimes are of special interest for this analysis,
 
 {% include violent_trend.html %}
 
-On the left side of the figure we can again clearly see the decline in violent crime until 2014. Furthermore, a seasonal pattern shows where crime rates are relatively higher in the summer compared to the winter months. The right hand side depicts the intra-day variation depending on the month. We see a strong increase in crime during the late evening hours. If you want to see the intra-day variation on the right side with data only for one year, you can select a single year by clicking on a square corresponding to that year in the left figure. The right graph will adapt accordingly.
+In the upper figure we can again clearly see the decline in violent crime until 2014. Furthermore, a seasonal pattern shows where crime rates are relatively higher in the summer compared to the winter months. The lower figure depicts the intra-day variation depending on the month. We see a strong increase in crime during the late evening hours. If you want to see the intra-day variation in the lower figure with data only for one year, you can select a single year by clicking on a square corresponding to that year in the upper figure. The lower one will adapt accordingly.
 
 ## Chicago's Safe Passage program
 Due to Chicago's notorious problem with crime and various incidents including students, the City of Chicago launched the Safe Passage program in 2009 for 35 schools. The goal of the program is to keep the students safe on their way to school, thereby giving them the chance to focus more on their studies.[^10] This should eventually show in reduced violent crime rates as well as an increase in school attendance.
