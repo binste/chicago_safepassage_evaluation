@@ -11,7 +11,7 @@ Chicago notoriously suffers from a very high number of violent crimes, where a v
 
 {% include violent_FBI.html %}
 <small>*Data source: [Crimes - 2001 to present, Chicago Data Portal; accessed January 25, 2018](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2){:target="_blank"}*<br />
-*The the categorization of violent crimes follows the [National Incident-Based Reporting System (NIBRS)](http://gis.chicagopolice.org/clearmap_crime_sums/crime_types.html){:target="_blank"} of the Federal Bureau of Investigation (FBI).*</small>
+*The categorization of violent crimes follows the [National Incident-Based Reporting System (NIBRS)](http://gis.chicagopolice.org/clearmap_crime_sums/crime_types.html){:target="_blank"} of the Federal Bureau of Investigation (FBI).*</small>
 
 Violent crimes are of special interest for this analysis, as they represent the crimes which should be prevented by the analyzed crime prevention program. Let us therefore zoom a bit more into the intra-year and intra-day variation of violent crimes with the figure below.
 
