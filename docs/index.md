@@ -7,23 +7,21 @@ title: Introduction
 The final steps to obtain the figures used on this website can be reproduced directly in your browser without any setup needed by clicking on [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binste/chicago_safepassage_evaluation/master?filepath=notebooks%2F5_analysis%2F1.0-binste-analyze-crime-results-census-block-level.ipynb){:target="_blank"}. If you want to rerun the estimation or even start out from the raw data files, visit the [GitHub repository](https://github.com/binste/chicago_safepassage_evaluation) for instructions.
 
 ## Crime in Chicago
-{% comment %}
-Need better start
-{% endcomment %}
-Chicago suffers from very high homicide rates.[^1]. In 2017, on average every 13 hours a person was murdered in Chicago and every 2 hours and 30 minutes someone was shot[^2]. The figure below shows, that a few years ago this was even worse. Both violent as well as property crimes dropped significantly until around 2014, 2015. But since then, they slightly picked up again.
+Chicago notoriously suffers from a very high number of violent crimes, where a vast part of the incidents happen in poor neighborhoods on the South and West Sides.[^1] In 2017, on average every 13 hours a person was murdered in Chicago and every 2 hours and 30 minutes someone was shot[^2]. The figure below shows the evolution of violent crime over time. Although there was a decline up until 2014, since then the crime count has started to increase again.
 
-{% include yearly_violent_trend.html %}
+{% include violent_FBI.html %}
 <small>*Data source: [Crimes - 2001 to present, Chicago Data Portal; accessed January 25, 2018](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2)*<br />
-*The distinction made in the figure between property and violent crimes follows the [National Incident-Based Reporting System (NIBRS)](http://gis.chicagopolice.org/clearmap_crime_sums/crime_types.html) of the Federal Bureau of Investigation (FBI).*</small>
+*The the categorization of violent crimes follows the [National Incident-Based Reporting System (NIBRS)](http://gis.chicagopolice.org/clearmap_crime_sums/crime_types.html) of the Federal Bureau of Investigation (FBI).*</small>
 
+Violent crimes are of special interest for this analysis, as they represent the crimes which should be prevented by the analyzed crime prevention program. Let us therefore zoom a bit more into the intra-year and intra-day variation of violent crimes with the figure below.
 
-Of the two categories, violent crimes are of special interest for this analysis, as they represent the crimes which should be prevented by the analyzed crime prevention program. Let us therefore zoom a bit more into the intra-year and intra-day variation of violent crimes with the figure below.
-
-Note that, if you want to see the intra-day variation in the lower figure with data only for one year, you can select a single year by clicking on a square corresponding to that year in the upper figure. The lower one will adapt accordingly.
+Note that, if you want to see the intra-day variation in the lower part of the figure with data only for one year, you can select a single year by clicking on a square corresponding to that year in the upper figure. The lower heatmap will adapt accordingly.
 
 {% include violent_trend.html %}
+<small>*Data source: [Crimes - 2001 to present, Chicago Data Portal; accessed January 25, 2018](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2)*<br />
+*The the categorization of violent crimes follows the [National Incident-Based Reporting System (NIBRS)](http://gis.chicagopolice.org/clearmap_crime_sums/crime_types.html) of the Federal Bureau of Investigation (FBI).*</small>
 
-In the upper figure we can again clearly see the decline in violent crime until 2014. Furthermore, a seasonal pattern shows where crime rates are relatively higher in the summer compared to the winter months. The lower figure depicts the intra-day variation depending on the month. We see a strong increase in crime during the late evening hours.
+In the upper heatmap we can again clearly see the decline in violent crime until 2014. Furthermore, a seasonal pattern shows where crime rates are relatively higher in the summer compared to the winter months. The lower visualization depicts the intra-day variation depending on the month. We see a strong increase in crime during the late evening hours.
 
 ## Chicago's Safe Passage program
 Due to Chicago's notorious problem with crime and various incidents including students, the City of Chicago launched the Safe Passage program in 2009 for 35 schools. The goal of the program is to keep the students safe on their way to school, thereby giving them the chance to focus more on their studies.[^10] This should eventually show in reduced violent crime rates as well as an increase in school attendance.
