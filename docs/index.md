@@ -44,6 +44,10 @@ In the spring of 2017 I started a preliminary analysis on this topic as a projec
 
 My chosen analytical approach in the following closely follows one of their specifications, where they aggregate crime counts on the level of census blocks and can be seen as an attempt to replicate some of the findings concerning the reduction in crime. A direct comparison of descriptive figures, tables, and the main results can be obtained by clicking on the "launch binder" badge at the beginning of the page.
 
+For a more detailed overview of the literature I refer to the Appendix.{% comment %}
+TODO: Add link
+{% endcomment %}
+
 [Continue to "Estimation and results"](./estimation_and_results.md)
 
 # References
