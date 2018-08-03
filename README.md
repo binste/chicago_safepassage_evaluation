@@ -6,9 +6,9 @@ This repository contains the code and data for an analysis of the effect of Chic
 
 The policy evaluation is one of two parts of my master thesis (2018) at the University of Zurich under the supervision of [Prof. Pietro Biroli](https://sites.google.com/site/pietrobiroli/home). The second one is [A Basic Guide to Reproducible Research](https://binste.github.io/basic_reproducibility_guide/), where this analysis serves as an example.
 
-The empirical approach chosen for this analysis follows one of the specifications in the paper ["Do More Eyes on the Street Reduce Crime? Evidence from Chicago’s Safe Passage Program"](https://ignaciomsarmiento.github.io/assets/Safe_Passage_WP.pdf) by Daniel McMillen, Ignacio Sarmiento-Barbieri, and Ruchi Singh from June 22, 2017. It can therefore be seen as an attempt to replicate some of their main findings.
+The empirical approach chosen for this analysis follows one of the specifications in the paper ["Do More Eyes on the Street Reduce Crime? Evidence from Chicago’s Safe Passage Program"](https://ignaciomsarmiento.github.io/assets/Safe_Passage_WP.pdf) by Daniel McMillen, Ignacio Sarmiento-Barbieri, and Ruchi Singh from June 22, 2017. It is an attempt to replicate their main finding of a significant reduction in violent crime due to the Safe Passage program.
 
-For a more detailed description of the data used, the empirical strategy as well as its limitations, see the Appendix (XXX)
+For a more detailed description of the data used, the empirical strategy as well as its limitations, see the Appendix (XXX).
 
 ## Replicate analysis
 ### Figures for website and comparison to McMillen et al. (2017)
@@ -22,7 +22,8 @@ Due to resource constraints on the above used service, to run the estimations of
 
 1. Install the [Docker Community Edition](https://store.docker.com/search?type=edition&offering=community) for your operating system
 2. Install repo2docker: `pip install jupyter-repo2docker`
-3. Build and launch docker image of GitHub repository: `jupyter-repo2docker https://github.com/binste/chicago_safepassage_evaluation`
+3. Build and launch docker image of GitHub repository:
+`jupyter-repo2docker https://github.com/binste/chicago_safepassage_evaluation`
 4. After it run through, there is an URL which will lead you to a Jupyter notebook server in the root directory of the project.
 
 If it does not work, go into Docker preferences and increase resources. XXX what do I have?
