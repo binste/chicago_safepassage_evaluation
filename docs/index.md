@@ -46,7 +46,7 @@ TODO: Add link? Should this remark be in here?
 
 Next to trying to replicate the findings of McMillen et al. (2017)[^8], this project aims at providing a publicly available analysis of the Safe Passage program, which others can easily build upon and scrutinize. Furthermore it serves as an example for the second part of my master thesis, which is [A Basic Guide to Reproducible Research](https://binste.github.io/basic_reproducibility_guide/).
 
-[Continue to the section on "Estimation and results"](./estimation_and_results.md)
+[Continue to the section on "Estimation strategy and results"](./estimation_and_results.md)
 
 # References
 
