@@ -11,6 +11,7 @@ If you want to follow along with the analysis in a more interactive way, click o
 ## Crime in Chicago
 Chicago notoriously suffers from a very high number of violent crimes, where a vast part of the incidents happen in poor neighborhoods on the South and West Sides.[^1] In 2017, on average, every 13 hours a person was murdered and every 2 hours and 30 minutes someone was shot[^2]. A few years ago this was even worse. The figure below shows the evolution of violent crimes over time. You can see that, although declining until 2014, the crime count has started to increase again.
 
+<small>*Figure 1 - Evolution of violent-crime counts over time*</small>
 {% include violent_FBI.html %}
 <small>*Data source: [Crimes - 2001 to present, Chicago Data Portal; accessed January 25, 2018](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2){:target="_blank"}*<br />
 *The definition of violent crimes as well as the sub categories follows the [National Incident-Based Reporting System (NIBRS)](http://gis.chicagopolice.org/clearmap_crime_sums/crime_types.html){:target="_blank"} of the Federal Bureau of Investigation (FBI).*</small>
@@ -19,6 +20,7 @@ Let us zoom a bit more into the intra-year and intra-day variation of violent cr
 
 Note that, if you want to see the intra-day variation in the lower part of the figure calculated with data only for one year, you can select a single year by clicking on a square corresponding to that year in the upper figure. The lower heatmap will adapt accordingly.
 
+<small>*Figure 2 - Intra-year and intra-day variation in violent crimes*</small>
 {% include violent_trend.html %}
 <small>*Data source: [Crimes - 2001 to present, Chicago Data Portal; accessed January 25, 2018](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2){:target="_blank"}*<br />
 *The definition of violent crimes follows the [National Incident-Based Reporting System (NIBRS)](http://gis.chicagopolice.org/clearmap_crime_sums/crime_types.html){:target="_blank"} of the Federal Bureau of Investigation (FBI).*</small>
