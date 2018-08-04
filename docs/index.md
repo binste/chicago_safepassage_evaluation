@@ -16,8 +16,9 @@ Do the crimes need further definition?
 
 <small>*Figure 1 - Evolution of violent- and property-crime counts over time*</small>
 {% include yearly_violent_trend.html %}
-<small>*Data source: [Crimes - 2001 to present, Chicago Data Portal; accessed January 25, 2018](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2){:target="_blank"}*<br />
-*The definition of violent and property crimes follows the [National Incident-Based Reporting System (NIBRS)](http://gis.chicagopolice.org/clearmap_crime_sums/crime_types.html){:target="_blank"} of the Federal Bureau of Investigation (FBI).*</small>
+<small>*The definition of violent and property crimes follows the [National Incident-Based Reporting System (NIBRS)](http://gis.chicagopolice.org/clearmap_crime_sums/crime_types.html){:target="_blank"} of the Federal Bureau of Investigation (FBI).*<br />
+*This is a replication of Figure A.2 in McMillen et al. (2017)[^8]*<br />
+*Data source: [Crimes - 2001 to present, Chicago Data Portal; accessed January 25, 2018](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2){:target="_blank"}*</small>
 
 If we looked at a more detailed categorization of violent crimes, we see that the number of homicides in 2017 is even on a higher level than in 2006.
 
