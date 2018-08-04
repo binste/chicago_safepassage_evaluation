@@ -31,9 +31,18 @@ Further explain, why this is the case.
 
 To be more confident in the comparability of treated and control blocks, McMillen et al. (2017)[^1] choose census blocks as controls, which are right next to the treated ones. This leads to the control blocks having similar demographic characteristics as their treated counterparts (such as racial heterogeneity, income distribution, etc.). It might therefore be more reasonable to assume, that the trends of treated and control blocks would have been approximately the same in the absence of the implementation of the crime prevention program, compared to the more naive approach of picking control blocks at random from all available ones.
 
-McMillen et al. (2017)[^1] further subdivide the control blocks into three groups. {% comment %}
+McMillen et al. (2017)[^1] further subdivide the control blocks into three groups. A block which itself is not treated but is adjacent to a treated block, is called a "One over" block. A block which has a "One over" block between itself and a "treated" block will be called "Two over". The same logic applies for "Three over" blocks.
+
+<small>*Figure 5 - Illustration of block categorization*</small>
+![block_groups](figures/blockgroups.png)
+<small>*Example using the Safe Pssage route of Bogan High School in the school year 2013-2014 as well as the surrounding blocks.*<br />
+*Data sources: XXX*</small>
+{% comment %}
 Include illustration map?
-{% endcomment %} A block which itself is not treated but is adjacent to a treated block, is called a "One over" block. A block which has a "One over" block between itself and a "treated" block will be called "Two over". The same logic applies for "Three over" blocks. This categorization of control blocks allows to not only more accurately access the effect of the program on the treated blocks, but also to analyze possible displacement effects. If such effects would be present, crimes might not be prevented, but simply happen in areas close by, where the guards can't see them.
+{% endcomment %}
+
+
+This categorization of control blocks allows to not only more accurately access the effect of the program on the treated blocks, but also to analyze possible displacement effects. If such effects would be present, crimes might not be prevented, but simply happen in areas close by, where the guards can't see them.
 
 {% comment %}
 Include binder badge to map of blocks?
@@ -41,7 +50,7 @@ Include binder badge to map of blocks?
 
 The following figure shows the number of blocks over the school years, which are labelled as belonging to one of the four categories.
 
-<small>*Figure 5 - Number of treated and control blocks per school year*</small>
+<small>*Figure 6 - Number of treated and control blocks per school year*</small>
 ![block_trend](figures/blocktrend.png)
 <small>*Data sources: XXX*</small>
 
@@ -51,7 +60,7 @@ To get a feeling for how good the comparability of treatment and control units i
 
 The following figure visualizes average violent-crime counts per block per weekday. The school years on the horizontal axis are relative to the implementation of the Safe Passage program of the corresponding "Treated" block (each control block has the closest treated block assigned to it).
 
-<small>*Figure 6 - Difference in differences plot for violent crimes*</small>
+<small>*Figure 7 - Difference in differences plot for violent crimes*</small>
 ![did_violent](figures/didfigureviolent.png)
 <small>*To create this figure, each block needs to be assigned to exactly one group. The data used here is therefore not exactly representative of the one used in the final estimation of the effect, as there, blocks are allowed to change their status. They can for example first be a "Two over" block and then become a "One over" block, if a Safe Passage route gets implemented in an adjacent block. However, this can be seen as a close approximation.*<br />
 *This figure is an approximate replication of Figure 3a in McMillen et al. (2017)[^1]*<br />
@@ -61,7 +70,7 @@ When looking at the overall level of the crime counts, treated blocks indeed do 
 
 We see that the trends in crimes are rather similar before the implementation of the program, with slightly stronger differences between the 4th and 5th school year prior to the implementation. In the first school year after the implementation of the program, we see a drop in crime counts for the treated blocks. No such jump however is visible for the three control block categories.
 
-<small>*Figure 7 - Difference in differences plot for property crimes*</small>
+<small>*Figure 8 - Difference in differences plot for property crimes*</small>
 ![did_property](figures/didfigureproperty.png)
 <small>*To create this figure, each block needs to be assigned to exactly one group. The data used here is therefore not exactly representative of the one used in the final estimation of the effect, as there, blocks are allowed to change their status. They can for example first be a "Two over" block and then become a "One over" block, if a Safe Passage route gets implemented in an adjacent block. However, this can be seen as a close approximation.*<br />
 *This figure is an approximate replication of Figure 3b in McMillen et al. (2017)[^1]*<br />
