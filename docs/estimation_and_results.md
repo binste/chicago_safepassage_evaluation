@@ -20,7 +20,7 @@ However, as mentioned before, we do not know what would have happened, if the pr
 
 This is where the before mentioned approximation comes into play. Behind the approach used in this analysis stands the idea, that other census blocks, which are not crossed by a Safe Passage route in a given month, can be seen as such an approximation. Let's continue with the example from above and imagine a second census block ("control block") which did never receive a Safe Passage route. This control block might have experienced a decrease in crime counts of 1 crime per month, when comparing the same before and after months as for the treated block (i.e. before and after the beginning of the school year 2012-2013). In the above figure this would be the solid red line.
 
-If we are confident, that the "control" block is a **good approximation for the change in crime** (the dashed red line in the figure above) for the treated block, should the program never have been implemented, the implication then is, that 1 of the on average 2 prevented crimes in the treated block is due to the program and the other one is due to other factors which affected both control and treated block (such as a city-wide program to prevent crime).
+If we are confident, that the "control" block is a good approximation for the change in crime (the dashed red line in the figure above) for the treated block, should the program never have been implemented, the implication then is, that 1 of the on average 2 prevented crimes in the treated block is due to the program and the other one is due to other factors which affected both control and treated block (such as a city-wide program to prevent crime).
 
 This approach is generally referred to as difference in differences (DiD). The first difference is the two trends over time, one of the treated blocks and one of the control. The second difference is then the difference between these two trends (as calculated above in our toy example).
 
@@ -67,7 +67,7 @@ We see that the trends in crimes are rather similar before the implementation of
 *This figure is an approximate replication of Figure 3b in McMillen et al. (2017)[^1]*<br />
 *Data sources: XXX*</small>
 
-When we look at property crimes in Figure 7, we again see, apart from the 5th and 4th school year prior to the implementation, rather similar pre-treatment trends. However, visually there is no clue that the implementation let to an effect on property crime, as all groups experienced a similar downwards trend.
+When we look at property crimes in Figure 7, we again see, apart from the 5th and 4th school year prior to the implementation, rather similar pre-treatment trends. However, visually there is no clue that the implementation led to an effect on property crime, as all groups experienced a similar downwards trend.
 
 ## Main findings
 To quantify the effect of the Safe Passage program, McMillen et al. (2017) use a Poisson regression. Details on the specification can be found in the Appendix XXX. Following the same estimation strategy, I found that the Safe Passage program reduces violent crime by 12.5% on average. The result is therefore very similar to their findings of a 13.4% reduction in violent crime. For property crime no significant reduction in crime could be found, neither by the authors of the original paper, nor by myself. I was therefore able to successfully replicate their findings concerning the effect of the Safe Passage program on violent and property crime. A more detailed comparison of the main results and the figures presented here can be found by clicking on the first "launch binder" badge on the previous page.
@@ -81,7 +81,9 @@ Mention that they do more things in paper to check for the robustness.
 {% endcomment %}
 
 
+Again I would like to reference to the Appendix XXX for more details on the analysis and the data used. The code and data, as well as instructions on how to reproduce the analysis, are available in the corresponding [GitHub repository](https://github.com/binste/chicago_safepassage_evaluation).
 
+If you are interested in reproducible research, head over to my [Basic Guide on Reproducible Research](https://binste.github.io/basic_reproducibility_guide/).
 
 [Back to the introduction](./index.md)
 
