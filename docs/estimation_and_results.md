@@ -82,21 +82,15 @@ We see that the trends in crimes are rather similar before the implementation of
 When we look at property crimes in Figure 7, we again see, apart from the 5th and 4th school year prior to the implementation, rather similar pre-treatment trends. However, visually there is no clue that the implementation led to an effect on property crime, as all groups experienced a similar downwards trend.
 
 ## Results
-To quantify the effect of the Safe Passage program, which we already visually saw in the two figures above, McMillen et al. (2017) use a Poisson regression. Details on the specification can be found in the Appendix XXX. Following the same estimation strategy, I found that the Safe Passage program reduces violent crime by 12.5% on average between 6.30 am and 5.30 pm for week days of a school year. The result is therefore very similar to their findings of a 13.4% reduction. Furthermore, no displacement effects to the adjacent areas was found. For property crime, the estimation shows no statistically significant reduction in crime, neither by the authors of the original paper, nor by myself.
+To quantify the effect of the Safe Passage program, which we already visually saw in the two figures above, McMillen et al. (2017) use a Poisson regression. Details on the specification can be found in the Appendix XXX. Following the same estimation strategy, I found that the Safe Passage program reduces violent crime by 12.5% on average between 6.30 am and 5.30 pm for the week days of a school year. The result is therefore very similar to their findings of a 13.4% reduction. Furthermore, no displacement effects to the adjacent areas were found. For property crime, the estimation finds no evidence of a reduction in crime, neither in the original paper nor in my own.
 
 I was therefore able to successfully replicate their findings concerning the effect of the Safe Passage program on crime on the level of census blocks. A more detailed comparison of the main results and the figures presented here can be found by clicking on the first "launch binder" badge on the previous page or in the Appendix XXX.
 
 Note, that the paper by McMillen, Sarmiento-Berbieri, and Singh contains much more than this one specification, including various robustness checks assessing the reliability of the results, an analysis of the effect of the program on attendance rates, as well as a cost-benefit analysis of the whole Safe Passage program.
 
-{% comment %}
-Set the percentages into context. How much reduction from baseline crime is it?
-
-However, the reduction in violent crimes is only half the number claimed by city officials. It remains interesting to see an evaluation from the official side to back up these numbers.
-{% endcomment %}
-
 Again I would like to reference to the Appendix XXX for more details on the analysis, the data used, the empirical strategy, as well as its limitations. The code and data, as well as instructions on how to reproduce the analysis, are available in the corresponding [GitHub repository](https://github.com/binste/chicago_safepassage_evaluation).
 
-If you are interested in reproducible research, head over to my [Basic Guide on Reproducible Research](https://binste.github.io/basic_reproducibility_guide/).
+If you are interested in doing your own reproducible data analysis, head over to my [Basic Guide on Reproducible Research](https://binste.github.io/basic_reproducibility_guide/).
 
 [Back to the introduction](./index.md)
 
