@@ -69,7 +69,7 @@ The following figure visualizes average violent-crime counts per block per weekd
 *This figure is an approximate replication of Figure 3a in McMillen et al. (2017)[^1]*<br />
 *Data sources: XXX*</small>
 
-When looking at the overall level of the crime counts, treated blocks indeed do suffer from more incidents then the control blocks. We can therefore already see, that at least in respect to the level of the crime the control blocks are not directly comparable to the treated blocks. However, as mentioned before, what we need for the difference-in-difference approach to work, is that the changes in crime over time would be similar in absence of treatment.
+When looking at the overall level of the crime counts, treated blocks do suffer from more incidents then the control blocks. Therefore, even though the control blocks are right next to the treated blocks, they are not comparable in terms of the number of incidents. This again shows, that the Safe Passage program was implemented primarily in high-crime areas. However, as mentioned before, what we need for the difference-in-difference approach to work, is that the changes in crime over time would be similar in absence of treatment.
 
 We see that the trends in crimes are rather similar before the implementation of the program, with slightly stronger differences between the 4th and 5th school year prior to the implementation. In the first school year after the implementation of the program, we see a drop in crime counts for the treated blocks. No such jump however is visible for the three control block categories.
 
