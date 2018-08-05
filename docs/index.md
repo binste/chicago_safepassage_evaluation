@@ -20,7 +20,7 @@ Do the crimes need further definition?
 *This figure is an approximate replication of Figure A.2 in McMillen et al. (2017)[^8]*<br />
 *Data source: [Crimes - 2001 to present, Chicago Data Portal; accessed January 25, 2018](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2){:target="_blank"}*</small>
 
-If we looked at a more detailed categorization of violent crimes, we see that the number of homicides in 2017 is even on a higher level than in 2006.
+If we look at the following more detailed view of violent crimes, we see that the number of homicides in 2017 is even on a higher level than in 2006.
 
 <small>*Figure 2 - Evolution of violent-crime counts over time by subcategories*</small>
 {% include violent_FBI.html %}
@@ -41,6 +41,10 @@ Note that, if you want to see the intra-day variation in the lower part of the f
 In the upper heatmap we can again clearly see the decline in violent crime until 2014. Furthermore, a seasonal pattern shows where crime rates are relatively higher in the summer compared to the winter months. The lower visualization depicts the intra-day variation by month. There is a strong increase in crimes starting in the late afternoon, when children are starting to leave their schools. This is also when property crime counts are notoriously high.
 
 ## Chicago's Safe Passage program
+Chicago's crime incidents regularly involve students. In 2012, 29 current or former students of Harper High School were shot, eight of them did not survive.[^11][^12]
+
+>*"[I] encountered kids at Harper [High School] who wake up and they wonder whether they're going to make it out of school alive."* - Michelle Obama, 2013[^12]
+
 Due to Chicago's high crime rate and as incidents regularly include students, the City of Chicago launched the Safe Passage program in 2009 for initially 35 schools. The program has the goal of keeping the students safe on their way to school and thereby enabling them to focus more on their studies.[^10] This should eventually result in reduced crime counts as well as an increase in school attendance in the affected neighborhoods.
 
 To ensure the safety of the children, guards, which are mostly residents from the respective neighborhoods, are posted along various routes to the participating schools, right before and after schooling hours[^3]. They are hired by local community organizations and trained in de-escalation strategies and safety protocols. However, they do not carry any weapons or have special authority.[^8]
@@ -75,3 +79,5 @@ Next to trying to replicate the findings of McMillen et al. (2017)[^8], this pro
 [^8]: [Do More Eyes on the Street Reduce Crime? Evidence from Chicago’s Safe Passage Program; June 22, 2017](https://ignaciomsarmiento.github.io/assets/Safe_Passage_WP.pdf){:target="_blank"}
 [^9]: [CPS says students safer now than five years ago - Chicago Sun-Times; September 22, 2016](https://www.pressreader.com/usa/chicago-sun-times/20160922/281582355105718){:target="_blank"}
 [^10]: [In Chicago, Campaign to Provide Safe Passage on Way to School - The New York Times; August 26, 2013](https://www.nytimes.com/2013/08/27/education/in-chicago-campaign-to-provide-safe-passage-on-way-to-school.html){:target="_blank"}
+[^11]: [Harper High School - This American Life; February 15, 2013](https://www.thisamericanlife.org/487/harper-high-school-part-one)
+[^12]: [Michelle Obama: Chicago Students Worried 'About Their Own Death' - dnainfo; May 5, 2013](https://www.dnainfo.com/chicago/20130505/chicago/michelle-obama-chicago-students-worried-about-their-own-death/)
