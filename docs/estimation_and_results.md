@@ -53,6 +53,9 @@ The following figure shows the number of blocks over the school years, which are
 <small>*Figure 6 - Number of treated and control blocks per school year*</small>
 ![block_trend](figures/blocktrend.png)
 <small>*Data sources: XXX*</small>
+{% comment %}
+Is this figure really needed?
+{% endcomment %}
 
 You can see the big expansion of the program in the school year 2013-2014, which was mentioned in the introduction.
 
@@ -78,17 +81,21 @@ We see that the trends in crimes are rather similar before the implementation of
 
 When we look at property crimes in Figure 7, we again see, apart from the 5th and 4th school year prior to the implementation, rather similar pre-treatment trends. However, visually there is no clue that the implementation led to an effect on property crime, as all groups experienced a similar downwards trend.
 
-## Main findings
-To quantify the effect of the Safe Passage program, McMillen et al. (2017) use a Poisson regression. Details on the specification can be found in the Appendix XXX. Following the same estimation strategy, I found that the Safe Passage program reduces violent crime by 12.5% on average. The result is therefore very similar to their findings of a 13.4% reduction in violent crime. For property crime no significant reduction in crime could be found, neither by the authors of the original paper, nor by myself. I was therefore able to successfully replicate their findings concerning the effect of the Safe Passage program on violent and property crime. A more detailed comparison of the main results and the figures presented here can be found by clicking on the first "launch binder" badge on the previous page.
+## Results
+To quantify the effect of the Safe Passage program, McMillen et al. (2017) use a Poisson regression. Details on the specification can be found in the Appendix XXX. Following the same estimation strategy, I found that the Safe Passage program reduces violent crime by 12.5% on average. The result is therefore very similar to their findings of a 13.4% reduction. For property crime no significant reduction in crime could be found, neither by the authors of the original paper, nor by myself. I was therefore able to successfully replicate their findings concerning the effect of the Safe Passage program on crime on the level of census blocks. A more detailed comparison of the main results and the figures presented here can be found by clicking on the first "launch binder" badge on the previous page.
+
+
+
+
 
 {% comment %}
 Set the percentages into context. How much reduction from baseline crime is it?
 
 However, the reduction in violent crimes is only half the number claimed by city officials. It remains interesting to see an evaluation from the official side to back up these numbers.
 
-Mention that they do more things in paper to check for the robustness.
 {% endcomment %}
 
+Note, that the paper by McMillen, Sarmiento-Berbieri, and Singh contains much more than just this one specification, including various robustness checks assessing the reliability of the results, an analysis of the effect of the program on attendance rates, as well as a cost-benefit analysis of the whole Safe Passage program.
 
 Again I would like to reference to the Appendix XXX for more details on the analysis and the data used. The code and data, as well as instructions on how to reproduce the analysis, are available in the corresponding [GitHub repository](https://github.com/binste/chicago_safepassage_evaluation).
 
