@@ -35,7 +35,7 @@ McMillen et al. (2017)[^1] further subdivide the control blocks into three group
 
 <small>*Figure 5 - Illustration of block categorization*</small>
 ![block_groups](figures/blockgroups.png)
-<small>*Example using the Safe Pssage route of Bogan High School in the school year 2013-2014 as well as the surrounding blocks.*<br />
+<small>*Example using the Safe Passage route of Bogan High School in the school year 2013-2014 as well as the surrounding blocks.*<br />
 *Data sources: XXX*</small>
 {% comment %}
 Include illustration map?
