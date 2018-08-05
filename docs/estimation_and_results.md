@@ -94,7 +94,7 @@ Set the percentages into context. How much reduction from baseline crime is it?
 However, the reduction in violent crimes is only half the number claimed by city officials. It remains interesting to see an evaluation from the official side to back up these numbers.
 {% endcomment %}
 
-Again I would like to reference to the Appendix XXX for more details on the analysis and the data used. The code and data, as well as instructions on how to reproduce the analysis, are available in the corresponding [GitHub repository](https://github.com/binste/chicago_safepassage_evaluation).
+Again I would like to reference to the Appendix XXX for more details on the analysis, the data used, the empirical strategy, as well as its limitations. The code and data, as well as instructions on how to reproduce the analysis, are available in the corresponding [GitHub repository](https://github.com/binste/chicago_safepassage_evaluation).
 
 If you are interested in reproducible research, head over to my [Basic Guide on Reproducible Research](https://binste.github.io/basic_reproducibility_guide/).
 
