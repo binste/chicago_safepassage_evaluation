@@ -28,7 +28,9 @@ Due to resource constraints on the above used service, to run the estimations of
 
 If it does not work, go into Docker preferences and increase resources. XXX what do I have?
 
-Note however, that this will not allow you to save changes you make to the files as you're used to. If you want to continue working on this project, your best option is to clone the repository by running
+Note however, that if you don't know Docker, it is not straightforward to save any changes you make to a notebook etc.
+
+If you want to continue working on this project, your best option might be to clone the repository by running
 
 ```bash
 git clone https://github.com/binste/chicago_safepassage_evaluation
