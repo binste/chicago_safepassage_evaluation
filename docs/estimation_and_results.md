@@ -14,7 +14,8 @@ If we want to know the effect of the guards, one could compare average crime cou
 
 <small>*Figure 4 - Illustration of DiD example*</small>
 ![did_illustration](figures/didfigure.png)
-<small>*"Before" and "After Implementation" refer to the months prior and after the implementation of the Safe Passage program in the "treated" block.*</small>
+<small>*"Before" and "After Implementation" refer to the months prior and after the implementation of the Safe Passage program in the "treated" block.*<br />
+*Data source: Example from text*</small>
 
 However, as mentioned before, we do not know what would have happened, if the program was never implemented. Maybe there would have been a reduction of 2 crimes anyway,and the program would have had no effect whatsoever. Or there might have been an increase by 3 violent crimes per month and the program actually prevented an average of 5 violent crimes per month.
 
@@ -22,9 +23,7 @@ This is, where the before mentioned approximation comes into play. Behind the ap
 
 If we are confident, that the "control" block is a good approximation for the change in crime, we can now think of the treated block having experienced the same change in crime in absence of the program (the dashed red line in the figure above). The implication then is, that 1 of the on average 2 prevented crimes in the treated block is due to the program and the other one is due to other factors which affected both control and treated block (such as a city-wide program to prevent crime). We now do not simply compare before and after of the treated block (blue line), but we take the difference in the trends of the blue line and the dashed red line.
 
-This approach is generally referred to as difference in differences (DiD). The first difference is the two trends over time, one of the treated blocks and one of the control. The second difference refers to the difference between these two trends.
-
-How close the estimated effect of the DiD approach is to the unobservable truth, depends on how close the control block represents the unobservable crime trend that the treated block would have experienced in absence of the Safe Passage program.
+This approach is generally referred to as difference in differences (DiD). The first difference is the two trends over time, one of the treated blocks and one of the control. The second difference refers to the difference between these two trends. How close the estimated effect of the DiD approach is to the unobservable truth, depends on how close the control block represents the unobservable crime trend that the treated block would have experienced in absence of the Safe Passage program.
 
 As mentioned in the Introduction, Safe Passage routes are predominantly implemented in high-crime, low income, and segregated neighborhoods.[^1] Therefore, by picking control blocks at random from all blocks in Chicago, you might end up comparing fundamentally different areas. You'll have a hard time convincing people that the poorer neighborhoods of Chicago should be compared to some of the richer ones when assessing the impact of the program, as they are fundamentally different in many factors, which can influence crime.
 
