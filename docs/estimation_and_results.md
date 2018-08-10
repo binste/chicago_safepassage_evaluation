@@ -15,6 +15,7 @@ If we want to know the effect of the guards, one could compare average crime cou
 
 *<font size="-1">Figure 4 - Illustration of DiD example</font>*
 ![did_illustration](figures/didfigure.png)
+{: .full}
 *<font size="-1">"Before" and "After Implementation" refer to the months prior and after the implementation of the Safe Passage program in the "treated" block.<br />
 Data source: Example from text</font>*
 
@@ -35,6 +36,7 @@ McMillen et al. (2017)[^1] further subdivide the control blocks into three group
 
 *<font size="-1">Figure 5 - Illustration of block categorization</font>*
 ![block_groups](figures/blockgroups.png)
+{: .full}
 *<font size="-1">Example using the Safe Passage route of Bogan High School in the school year 2013-2014 as well as the surrounding blocks.<br />
 Data sources: See the section "Data" in the <a href="https://github.com/binste/chicago_safepassage_evaluation/tree/master/reports/appendix/Appendix.pdf" target="_blank">Appendix</a></font>*
 
@@ -48,6 +50,7 @@ The following figure shows the number of blocks over the school years, which are
 
 *<font size="-1">Figure 6 - Number of treated and control blocks per school year</font>*
 ![block_trend](figures/blocktrend.png)
+{: .full}
 *<font size="-1">Data sources: See the section "Data" in the <a href="https://github.com/binste/chicago_safepassage_evaluation/tree/master/reports/appendix/Appendix.pdf" target="_blank">Appendix</a></font>*
 
 You can see the big expansion of the program in the school year 2013-2014, which was mentioned in the introduction.
@@ -58,16 +61,18 @@ The following figure visualizes average violent-crime counts per block per weekd
 
 *<font size="-1">Figure 7 - Difference in differences plot for violent crimes</font>*
 ![did_violent](figures/didfigureviolent.png)
+{: .full}
 *<font size="-1">To create this figure, each block needs to be assigned to exactly one group. The data used here is therefore not exactly representative of the one used in the final estimation of the effect, as there, blocks are allowed to change their status. They can for example first be a "Two over" block and then become a "One over" block, if a Safe Passage route gets implemented in an adjacent block. However, this can be seen as a close approximation.<br />
 This figure is an approximate replication of Figure 3a in McMillen et al. (2017)<br />
 Data sources: See the section "Data" in the <a href="https://github.com/binste/chicago_safepassage_evaluation/tree/master/reports/appendix/Appendix.pdf" target="_blank">Appendix</a></font>*
 
 When looking at the overall level of the crime counts, treated blocks do suffer from more incidents then the control blocks. Therefore, even though the control blocks are right next to the treated blocks, they are not comparable in terms of the number of incidents. This again shows, that the Safe Passage program was implemented primarily in high-crime areas. However, as mentioned before, what we need for the difference-in-difference approach to work, is that the changes in crime over time would be similar in absence of treatment.
 
-We see that the trends in crimes are rather similar before the implementation of the program, with slightly stronger differences between the 4th and 5th school year prior to the implementation. In the first school year after the implementation of the program, we see a drop in crime counts for the treated blocks. No such jump however is visible for the three control block categories.
+We see that the changes in crime counts are rather close before the implementation of the program, with slightly stronger differences between treatment and control blocks from the 4th to the 5th school year prior to the implementation. In the first school year after the implementation of the program, we see a drop in crime counts for the treated blocks. No such jump however is visible for the three control block categories.
 
 *<font size="-1">Figure 8 - Difference in differences plot for property crimes</font>*
 ![did_property](figures/didfigureproperty.png)
+{: .full}
 *<font size="-1">To create this figure, each block needs to be assigned to exactly one group. The data used here is therefore not exactly representative of the one used in the final estimation of the effect, as there, blocks are allowed to change their status. They can for example first be a "Two over" block and then become a "One over" block, if a Safe Passage route gets implemented in an adjacent block. However, this can be seen as a close approximation.<br />
 This figure is an approximate replication of Figure 3b in McMillen et al. (2017)<br />
 Data sources: See the section "Data" in the <a href="https://github.com/binste/chicago_safepassage_evaluation/tree/master/reports/appendix/Appendix.pdf" target="_blank">Appendix</a></font>*
