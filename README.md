@@ -30,7 +30,7 @@ and then install and activate the conda environment by running:
 conda env create -f environment.yml
 source activate speval
 ```
-Now start Jupyter notebooks in the root directory of the project:
+Now start a Jupyter notebook server in the root directory of the project:
 ```bash
 jupyter notebook
 ```
@@ -56,7 +56,7 @@ However, if you are not familiar with Docker, it is not straightforward to save 
     ```bash
     jupyter-repo2docker https://github.com/binste/chicago_safepassage_evaluation
     ```
-4. After it run through, there is an URL which will lead you to a running Jupyter notebook instance.
+4. After it run through, there is an URL which will lead you to a running Jupyter notebook server.
 
 See [Order of execution](#order-of-execution) on how to proceed.
 
