@@ -54,9 +54,7 @@ Officials from the City of Chicago have mentioned declines in crime from 20% up 
 
 A more sophisticated approach was taken by Daniel McMillen, Ignacio Sarmiento-Barbieri, and Ruchi Singh in their working paper "Do More Eyes on the Street Reduce Crime? Evidence from Chicago’s Safe Passage Program" from June 22, 2017[^8]. They find a reduction in violent crime counts along Safe Passage routes of around 14%, however no significant effect could be detected for property crimes. As the authors did so far neither make their code nor all of the data public, I took the opportunity to try to replicate one of the specifications done in the paper. The results thereof as well as the estimation will be presented on the following page. A direct comparison of descriptive figures, tables, and the main results can be obtained by clicking on the "launch binder" badge at the beginning of the page.
 
-Note, that the paper by McMillen et al.[^8] contains much more then what I replicated. For a more detailed overview of the paper as well as other existing literature on the Safe Passage program see the section "Literature" in the Appendix.{% comment %}
-TODO: Add link? Should this remark be in here? Better introduce the Appendix?
-{% endcomment %}
+Note, that the paper by McMillen et al.[^8] contains much more then what I replicated. For a more detailed overview of the paper as well as other existing literature on the Safe Passage program see the section "Literature" in the [Appendix](https://github.com/binste/chicago_safepassage_evaluation/tree/master/reports/appendix/Appendix.pdf){:target="_blank"}.
 
 Next to attempting to replicate the findings of McMillen et al. (2017)[^8], this project aims at providing a publicly available analysis of the Safe Passage program, which others can easily build upon and extend. This hopefully will eventually lead to a better understanding of how we can effectively fight crime and prevent as much suffer as possible.
 
