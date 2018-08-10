@@ -8,6 +8,7 @@ author_profile: true
 share: false
 toc: false
 sidebar: false
+classes: wide
 ---
 **ATTENTION**: This is a work in progress and subject to major changes.
 
