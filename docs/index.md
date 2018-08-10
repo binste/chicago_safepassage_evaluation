@@ -45,7 +45,7 @@ Chicago's crime incidents regularly involve students. As an example, in 2012, 29
 
 >*"[I] encountered kids at Harper [High School] who wake up and they wonder whether they're going to make it out of school alive."* - Michelle Obama, 2013[^12]
 
-Due to Chicago's crime problem and the threats many students face daily when going to and coming form school, the City of Chicago launched the Safe Passage program in 2009 for initially 35 schools. The program has the goal of keeping the students safe on their way to school and thereby enabling them to focus more on their studies.[^10]
+Due to Chicago's crime problem and the threats many students face daily when going to and coming from school, the City of Chicago launched the Safe Passage program in 2009 for initially 35 schools. The program has the goal of keeping the students safe on their way to school and thereby enabling them to focus more on their studies.[^10]
 
 To ensure the safety of the children, guards, which are mostly residents from the respective neighborhoods, are posted along various routes to the participating schools, right before and after schooling hours.[^3] They are hired by local community organizations and trained in de-escalation strategies and safety protocols. However, they do not carry any weapons or have special authority.[^8]
 
