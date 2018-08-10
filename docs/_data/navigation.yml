@@ -1,0 +1,17 @@
+main:
+  - title: "Overview"
+    url: "/"
+  - title: "Evaluation"
+    url: "/introduction"
+
+guide:
+  - title: Evaluation
+    children:
+      - title: "Introduction"
+        url: /introduction
+      - title: "Estimation strategy and results"
+        url: /estimation_and_results
+  - title: Where to go next
+    children:
+      - title: "A Basic Guide to Reproducible Research"
+        url: https://binste.github.io/basic_reproducibility_guide/
