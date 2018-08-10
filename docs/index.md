@@ -1,9 +1,11 @@
 ---
 title: Introduction
 layout: page
+image: /figures/accident-barrier-caution-923681_cropped.jpg
 ---
-**ATTENTION**: This is a work in progress and subject to major changes.
+Photo by kat wilcox from Pexels
 
+**ATTENTION**: This is a work in progress and subject to major changes.
 
 This website is one of two parts of my master thesis (2018) at the University of Zurich and presents an evaluation of the effect of Chicago's Safe Passage program on crime. Furthermore, it serves as an example for the second part of my master thesis, which is [A Basic Guide to Reproducible Research](https://binste.github.io/basic_reproducibility_guide/).
 
