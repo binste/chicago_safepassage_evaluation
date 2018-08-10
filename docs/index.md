@@ -3,7 +3,7 @@ title: Introduction
 layout: page
 image: /figures/accident-barrier-caution-923681_cropped.jpg
 ---
-Photo by kat wilcox from Pexels
+<small>*Photo by kat wilcox from Pexels*</small>
 
 **ATTENTION**: This is a work in progress and subject to major changes.
 
