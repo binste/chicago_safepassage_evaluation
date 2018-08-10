@@ -18,34 +18,48 @@ By clicking on the badge below, you can replicate the figures used on the websit
 
 
 ### Run analysis on your own machine
-#### If just want to try out some things in a self-contained and isolated environment
-Due to resource constraints on the above used service, to run the estimations of the poisson regressions or even start out from the raw data files, you need to do this on your local machine. However, this is rather convenient with the amazing tool repo2docker. It will copy the repository on your own computer and setup everything for you in an isolated environment (using Docker).
+Due to resource constraints on the above used service, to run the estimations of the poisson regressions or even start out from the raw data files, you need to do this on your local machine. You might want to choose one of the following two options, depending on your knowledge and your goal.
 
-1. Install the [Docker Community Edition](https://store.docker.com/search?type=edition&offering=community) for your operating system
-2. Set the available memory for Docker to 4GB.
-    * On Mac this can be set by clicking on the Docker symbol in the status bar -> Preferences -> Advanced
-2. Install repo2docker: `pip install jupyter-repo2docker`
-    * The easiest way to get pip is to install a recent version of Python. Else, see the [official installation guide](https://pip.pypa.io/en/stable/installing/).
-3. Build and launch docker image of GitHub repository:
-    * `jupyter-repo2docker https://github.com/binste/chicago_safepassage_evaluation`
-4. After it run through, there is an URL which will lead you to a Jupyter notebook server in the root directory of the project.
-
-However, if you are not familiar with Docker, it is not straightforward to save any changes you make to a notebook etc.
-
-#### If you want to continue working on this project
-If you want to continue working on this project, your best option might be to clone the repository by running
+#### Set up a conda environment
+If you want to continue working on this project, your best option might be to clone the repository:
 ```bash
 git clone https://github.com/binste/chicago_safepassage_evaluation
 ```
-And then install and activate the conda environment by running
+and then install and activate the conda environment by running:
 ```bash
 conda env create -f environment.yml
 source activate speval
 ```
+Now start Jupyter notebooks in the root directory of the project:
+```bash
+jupyter notebook
+```
+See [Order of execution](#order-of-execution) on how to proceed.
 
-This will give you the exact same Python version as well as the same package versions for the main packages used.
+This approach should give you the exact same Python and R version as well as the same versions of the main packages used. However, system dependencies might differ and I was not able to test it on a Windows machine. Should you experience any problem with this, you might want to try out the next approach.
 
-I was not able to test this approach on a Windows machine, whereas the Docker approach mentioned above will work their too.
+#### Run it in a Docker container
+If you want to rerun the analysis in an isolated and tested environment, you can use the amazing tool repo2docker. It will copy the repository on your own computer and setup everything for you in an isolated and OS independent environment (using Docker).
+
+However, if you are not familiar with Docker, it is not straightforward to save any changes you make to a notebook etc.
+
+1. Install the [Docker Community Edition](https://store.docker.com/search?type=edition&offering=community) for your operating system
+2. Set the available memory for Docker to 4GB.
+    * On Mac this can be set by clicking on the Docker symbol in the status bar -> Preferences -> Advanced
+2. Install repo2docker from source to get the latest version:
+    ```bash
+    git clone https://github.com/jupyter/repo2docker.git
+    cd repo2docker
+    pip install -e .
+    ```
+3. Build and launch docker image of GitHub repository:
+    ```bash
+    jupyter-repo2docker https://github.com/binste/chicago_safepassage_evaluation
+    ```
+4. After it run through, there is an URL which will lead you to a running Jupyter notebook instance.
+
+See [Order of execution](#order-of-execution) on how to proceed.
+
 
 ### Data
 For a detailed description of all data sources used, see the section "Data" in the Appendix (XXX).
