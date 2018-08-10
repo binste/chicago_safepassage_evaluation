@@ -92,8 +92,6 @@ Again I would like to reference to the Appendix XXX for more details on the anal
 
 If you are interested in doing your own reproducible data analysis, head over to my [Basic Guide on Reproducible Research](https://binste.github.io/basic_reproducibility_guide/).
 
-[Back to the introduction](./index.md)
-
 # References
 [^1]: [Do More Eyes on the Street Reduce Crime? Evidence from Chicago’s Safe Passage Program; June 22, 2017](https://ignaciomsarmiento.github.io/assets/Safe_Passage_WP.pdf){:target="_blank"}
 [^2]: [Sliding Doors (1998) - imdb.com](https://www.imdb.com/title/tt0120148/){:target="_blank"}

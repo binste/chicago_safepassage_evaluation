@@ -67,7 +67,7 @@ TODO: Add link? Should this remark be in here? Better introduce the Appendix?
 
 Next to attempting to replicate the findings of McMillen et al. (2017)[^8], this project aims at providing a publicly available analysis of the Safe Passage program, which others can easily build upon and extend. This hopefully will eventually lead to a better understanding of how we can effectively fight crime and prevent as much suffer as possible.
 
-[Continue to the section on "Estimation strategy and results"](./estimation_and_results.md)
+Continue to the section on [Estimation strategy and results](./estimation_and_results.md)
 
 # References
 
