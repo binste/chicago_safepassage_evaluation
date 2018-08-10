@@ -1,15 +1,10 @@
-theme: minima
+remote_theme: "mmistakes/jekyll-theme-basically-basic"
 title: "Chicago's Safe Passage Program to Prevent Crime: Is It Worth the Dime?"
-author: "Stefan Binder"
-
-header_pages:
-  - index.md
-  - estimation_and_results.md
-
-exclude:
-  - README.md
 
 markdown: kramdown
+
+author:
+  name: Stefan Binder
 
 github_username: binste
 linkedin_username: stefan-binder-36b013130
