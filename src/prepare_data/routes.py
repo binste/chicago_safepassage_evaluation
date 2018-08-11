@@ -4,12 +4,37 @@ import pandas as pd
 
 
 def read_routes_file(sh_path, SY):
+    """Reads shapefile and adds given school year as column
+
+    Parameters
+    ----------
+    sh_path : str
+        Full path to shapefile
+
+    SY : str
+        School year in the format of 'SYXXYY'
+
+    Returns
+    -------
+    gpd.DataFrame
+    """
     routes = gpd.read_file(sh_path)
     routes['school_year'] = SY
     return routes
 
 
 def harmonize_dataframe(df):
+    """Harmonizes column names and datatypes
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        Dataframe to harmonize
+
+    Returns
+    -------
+    pd.DataFrame
+    """
     df = df.copy()
     df = df.rename(
         {
@@ -76,7 +101,17 @@ def harmonize_name(name, name_lookup):
 
 
 def include_harmonized_name(row):
-    """Includes harmonized name in variations list"""
+    """Includes harmonized name in variations list
+
+    Parameters
+    ----------
+    row : pd.Series
+        Needs to contain 'variations' and 'harmonized_name'
+
+    Returns
+    -------
+    pd.Series
+    """
     if not pd.isnull(row['variations']):
         row['variations'] = ([row['harmonized_name'].upper()] + list(
             map(str.upper, row['variations'].split('; '))))
