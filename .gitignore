@@ -53,6 +53,9 @@ data/interim/*
 *.json
 docs/_site/*
 *.lock
+
+# Ignores estimation datasets (normal and reduced)
+# as they are too big for GitHub
 data/processed/est_df*
 
 # Ignore crimes dataset as it is too big for GitHub
