@@ -56,7 +56,7 @@ However, if you are not familiar with Docker, it is not straightforward to save 
     ```bash
     jupyter-repo2docker https://github.com/binste/chicago_safepassage_evaluation
     ```
-4. After it run through, there is an URL which will lead you to a running Jupyter notebook server.
+4. After it run through, there is an URL, which will lead you to a running Jupyter notebook server. There is currently a bug, where the displayed URL does not work without a slight modification. Change XXX to XXX.
 
 See [Order of execution](#order-of-execution) on how to proceed.
 
@@ -66,14 +66,26 @@ For a detailed description of all data sources used, see the section "Data" in t
 
 With the exception of the crime dataset, all raw data files are provided under `data/raw`. The crime dataset is over 1.5 GB and could therefore not be hosted on GitHub. However, the notebook in the folder `0_download_data` will by default download it for you and put it in the correct folder. More on the exact order of execution in the next section The information on crimes should not change much for the years used in this analysis and therefore a download from the original source should work.
 
+Some of the processed datasets are included. However, the dataset used to estimate the Poisson regressions (`est_df`) could, due to its size, not be uploaded to GitHub. It will be reproduced if you follow the order of execution explained in the following.
+
 ### Order of execution
-To reconstruct the results starting out from the raw data, run all notebooks in the `notebooks` folders in order of their numbering. No other scripts have to be run apart from the notebooks. Should you want to run the whole pipeline with one command you can do this using the Python script `run_ipynb.py` which resides in the root folder of the project. Note however, that this will not give you much of an indication on the progress of the computations, you'll only see the name of the notebook currently processed. In the "Home" view of Jupyter notebook (where you can open files), click on the top right on "New" -> "Terminal". Now you should be able to run the following command to rerun the whole analysis from the raw data files to the end results:
+To reconstruct the results starting out from the raw data, run all notebooks in the `notebooks` folders in order of their numbering. No other scripts have to be run apart from the notebooks. The `src` folder does contain scripts with only functions, which are imported by the notebooks. Should you want to run the whole pipeline with one command you can do this using the Python script `run_ipynb.py` which resides in the root folder of the project. Note however, that this will not give you much of an indication on the progress of the computations, you'll only see the name of the notebook currently processed. In the "Home" view of Jupyter notebook (where you can open files), click on the top right on "New" -> "Terminal". Now you should be able to run the following command to rerun the whole analysis from the raw data files to the end results:
 
 ```bash
 python run_ipynb.py 0_download_data 1_prepare_data 2_crime_database 3_match 4_combine_for_analysis 5_analysis
 ```
 
 This can take up to multiple hours, depending on your hardware.
+
+### Analysis notebooks
+As the analysis notebooks are probably of the most interest, as they produce the main figures and results, the main two are briefly described in the following. They can be found in the folder `notebooks/5_analysis`.
+
+| Notebook | Description |
+| -------- | ----------- |
+| `0.0-binste-estimation-poisson.ipynb` | Estimates all the Poisson regressions for both violent and property crimes and saves models as well as results into the folder `model`.
+| `1.0-binste-analyze-crime-results-census-block-level.ipynb` | Replicates Figure 3, Figure A.2, Table 1, and Table 10 (column 3 and 7) from McMillen et al. (2017) and compares them to the originals. The notebook also produces additional figures for the website. |
+
+
 
 ### Hardware
 I used a MacBook Pro (macOS High Sierra 10.13.5) 3.1 GHz Intel Core i5 with 16 GB RAM to develop the project. No graphic card is needed. The end results were also tested and replicated in a Docker container, as explained above.
