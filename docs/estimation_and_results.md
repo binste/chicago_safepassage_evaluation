@@ -1,5 +1,6 @@
 ---
 title: Estimation strategy and results
+permalink: /estimation_and_results
 ---
 ## Strategy
 In the movie "Sliding Doors" (1998)[^2], we see the life of Helen in two versions. In one she catches the subway train, in another, she misses it by a split second. What unfolds are two completely different stories of her future, and you as a viewer can see both. The movie director therefore allows us to compare the two futures and derive the exact causal effect for Helen of catching that very train.

@@ -1,5 +1,6 @@
 ---
 title: Introduction
+permalink: /introduction
 ---
 ## Crime in Chicago
 Chicago notoriously suffers from a very high number of crimes, where many incidents happen in poor neighborhoods on the South and West Sides.[^1] Figure 1 shows, that even though there was a welcome downwards trend for a few years, for both property and violent crimes, this started to inverse around 2014/2015.
