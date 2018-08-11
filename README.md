@@ -8,7 +8,7 @@ The policy evaluation is one of two parts of my master thesis (2018) at the Univ
 
 The empirical approach chosen for this analysis follows one of the specifications in the working paper ["Do More Eyes on the Street Reduce Crime? Evidence from Chicago’s Safe Passage Program"](https://ignaciomsarmiento.github.io/assets/Safe_Passage_WP.pdf) by Daniel McMillen, Ignacio Sarmiento-Barbieri, and Ruchi Singh from June 22, 2017. It is an attempt to replicate their main finding of a significant reduction in violent crime due to the Safe Passage program.
 
-For a more detailed description of the data used, the empirical strategy as well as its limitations, see the Appendix (XXX).
+For a more detailed description of the data used, the empirical strategy as well as its limitations, see the [Appendix](./reports/appendix/Appendix.pdf).
 
 ## Replicate analysis
 ### Figures for website and comparison to McMillen et al. (2017)
