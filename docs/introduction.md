@@ -56,7 +56,7 @@ A more sophisticated approach was taken by Daniel McMillen, Ignacio Sarmiento-Ba
 
 Note, that the paper by McMillen et al.[^8] contains much more then what I replicated. For a more detailed overview of the paper as well as other existing literature on the Safe Passage program see the section "Literature" in the [Appendix](https://github.com/binste/chicago_safepassage_evaluation/tree/master/reports/appendix/Appendix.pdf){:target="_blank"}.
 
-Next to attempting to replicate the findings of McMillen et al. (2017)[^8], this project aims at providing a publicly available analysis of the Safe Passage program, which others can easily build upon and extend. This hopefully will eventually lead to a better understanding of how we can effectively fight crime and prevent as much suffer as possible.
+Next to attempting to replicate the findings of McMillen et al. (2017)[^8], this project aims at providing a publicly available analysis of the Safe Passage program, which others can easily build upon and extend, to get a better understanding of how to implement similar programs and effectively fight crime.
 
 Continue to the section on [Estimation strategy and results](./estimation_and_results.md)
 
