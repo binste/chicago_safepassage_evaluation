@@ -26,7 +26,8 @@ To put the graveness of the situation into more graspable numbers: In 2017, on a
 
 Let us change the perspective and look at the intra-year and intra-day variation of violent crimes. In the upper visualization of Figure 3, we again see the decline in crime counts until 2014. Furthermore, there is a clear seasonal pattern, where crime counts are relatively higher in the summer compared to the winter months. The lower visualization depicts the intra-day variation by month. There is a strong increase in crimes starting in the late afternoon, when children are starting to leave their schools. This is also when property crime counts are notoriously high.
 
-Note that, if you want to see the intra-day variation in the lower part of the figure calculated with data only for one year, you can select a single year by clicking on a square corresponding to that year in the upper figure. The lower heatmap will adapt accordingly.
+**Note**: If you want to see the intra-day variation in the lower part of the figure calculated with data only for one year, you can select a single year by clicking on a square corresponding to that year in the upper figure. The lower heatmap will adapt accordingly.
+{: .notice}
 
 *<font size="-1">Figure 3 - Intra-year and intra-day variation in violent crimes</font>*
 {% include violent_trend.html %}
@@ -50,7 +51,7 @@ In the school year 2016-2017, more than 1,300 Safe Passage workers guarded aroun
 Because of the graveness of Chicago's crime problem as well as the fact that a considerable amount of tax payer money is spent on the program, gaining more information on the effectiveness of the program arguably is of great importance. This analysis tries to answer the following question: Does Chicago's Safe Passage program reduce crime along the guarded routes during operational hours?
 
 ## What has been done before?
-Officials from the City of Chicago have mentioned declines in crime from 20% up to 32% due to the program, they did however not publish any details on such an analysis.[^5]<sup>,</sup>[^6]<sup>,</sup>[^7] In the school year 2015-2016, 30% less school students were shot compared to the school year of 2011-2012.[^9] The question remains in how far this decline in crime, which we already partly saw in the figures above (at least up to 2014), can be attributed to the Safe Passage program or if it is due to other factors.
+Officials from the City of Chicago have mentioned declines in crime from 20% up to 32% due to the program, they did however not publish any details on such an analysis.[^5]<sup>,</sup>[^6]<sup>,</sup>[^7] In the school year 2015-2016, 30% less school students were shot compared to the school year of 2011-2012.[^9] The question remains in how far this decline in crime, which we already partly saw in the figures above (at least up to 2014), is due to the Safe Passage program or because of other factors.
 
 A more sophisticated approach was taken by Daniel McMillen, Ignacio Sarmiento-Barbieri, and Ruchi Singh in their working paper "Do More Eyes on the Street Reduce Crime? Evidence from Chicago’s Safe Passage Program" from June 22, 2017[^8]. They find a reduction in violent crime counts along Safe Passage routes of around 14%, however no significant effect could be detected for property crimes. As the authors did so far neither make their code nor all of the data public, I took the opportunity to try to replicate one of the specifications done in the paper. The results thereof as well as the estimation will be presented on the following page. A direct comparison of descriptive figures, tables, and the main results can be obtained by clicking on the "launch binder" badge at the beginning of the page.
 
