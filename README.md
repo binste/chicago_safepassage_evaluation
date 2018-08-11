@@ -2,7 +2,7 @@
 **ATTENTION**: This is a work in progress and subject to major changes.
 
 
-This repository contains the code and data for an analysis of the effect of Chicago's Safe Passage program on violent crime counts along the guarded routes. The before mentioned program aims at keeping the students safe on their way to school. An introduction on the topic and a summary of the results can be found on the corresponding [website](https://binste.github.io/chicago_safepassage_evaluation/).
+This repository contains the code and data for an analysis of the effect of Chicago's Safe Passage program on violent crime counts along the guarded routes. The before mentioned program aims at keeping the students safe on their way to school. An introduction on the topic and a summary of this analysis and the results can be found on the corresponding [website](https://binste.github.io/chicago_safepassage_evaluation/).
 
 The policy evaluation is one of two parts of my master thesis (2018) at the University of Zurich under the supervision of [Prof. Pietro Biroli](https://sites.google.com/site/pietrobiroli/home). The second one is [A Basic Guide to Reproducible Research](https://binste.github.io/basic_reproducibility_guide/), where this analysis serves as an example.
 
