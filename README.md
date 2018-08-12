@@ -16,6 +16,10 @@ By clicking on the badge below, you can replicate the figures used on the websit
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binste/chicago_safepassage_evaluation/master?filepath=notebooks%2F5_analysis%2F1.0-binste-analyze-crime-results-census-block-level.ipynb)
 
+For a static version of the same notebook, click on
+
+[![nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.jupyter.org/github/binste/chicago_safepassage_evaluation/blob/master/notebooks/5_analysis/1.0-binste-analyze-crime-results-census-block-level.ipynb)
+
 
 ### Run analysis on your own machine
 Due to resource constraints on the above used service, to run the estimations of the poisson regressions or even start out from the raw data files, you need to do this on your local machine. You might want to choose one of the following two options, depending on your knowledge and your goal.
