@@ -72,7 +72,7 @@ However, if you are not familiar with Docker, it is not straightforward to save 
     ```bash
     jupyter-repo2docker https://github.com/binste/chicago_safepassage_evaluation
     ```
-4. After it run through, there is an URL, which will lead you to a running Jupyter notebook server. There is currently a bug, where the displayed URL does not work without a slight modification. Change XXX to XXX.
+4. After it run through, there is an URL, which will lead you to a running Jupyter notebook server. There is currently a bug when using jupyter-repo2docker, where the displayed URL might not work without a slight modification. To fix it, change the host name before the port to `127.0.0.1`. Example: `http://d2f78b8191fd:55484/?token=...` becomes `http://127.0.01:55484/?token=...`.
 
 See [Order of execution](#order-of-execution) on how to proceed.
 
