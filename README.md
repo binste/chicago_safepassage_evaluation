@@ -1,6 +1,16 @@
-# Chicago's Safe Passage Program to Prevent Crime: Is It Worth the Dime?
+ # Chicago's Safe Passage Program to Prevent Crime: Is It Worth the Dime?<!-- omit in toc -->
+
 **ATTENTION**: This is a work in progress and subject to major changes.
 
+- [Replicate analysis](#replicate-analysis)
+    - [Figures for website and comparison to McMillen et al. (2017)](#figures-for-website-and-comparison-to-mcmillen-et-al-2017)
+    - [Run analysis on your own machine](#run-analysis-on-your-own-machine)
+        - [Set up a conda environment](#set-up-a-conda-environment)
+        - [Run it in a Docker container](#run-it-in-a-docker-container)
+    - [Data](#data)
+    - [Order of execution](#order-of-execution)
+    - [Analysis notebooks](#analysis-notebooks)
+    - [Hardware](#hardware)
 
 This repository contains the code and data for an analysis of the effect of Chicago's Safe Passage program on violent crime counts along the guarded routes. The before mentioned program aims at keeping the students safe on their way to school. An introduction on the topic and a summary of this analysis and the results can be found on the corresponding [website](https://binste.github.io/chicago_safepassage_evaluation/).
 
