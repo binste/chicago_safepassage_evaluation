@@ -69,6 +69,9 @@ Data sources: See the section "Data" in the <a href="https://github.com/binste/c
 
 When looking at the overall level of the crime counts, treated blocks do suffer from more incidents then the control blocks. Therefore, even though the control blocks are right next to the treated blocks, they are not comparable in terms of the number of incidents. This again shows, that the Safe Passage program was implemented primarily in high-crime areas. However, as mentioned before, what we need for the difference-in-difference approach to work, is that the changes in crime over time would be similar in absence of treatment.
 
+**Note**: The average areas of treatment and control blocks are very similar and can therefore not be the cause for the level difference in crime counts in Figure 7 and Figure 8.
+{: .notice}
+
 We see that the changes in crime counts are rather close before the implementation of the program, with slightly stronger differences between treatment and control blocks from the 4th to the 5th school year prior to the implementation. In the first school year after the implementation of the program, we see a drop in crime counts for the treated blocks. No such jump however is visible for the three control block categories.
 
 *<font size="-1">Figure 8 - Difference in differences plot for property crimes</font>*
@@ -78,7 +81,7 @@ We see that the changes in crime counts are rather close before the implementati
 This figure is an approximate replication of Figure 3b in McMillen et al. (2017)<br />
 Data sources: See the section "Data" in the <a href="https://github.com/binste/chicago_safepassage_evaluation/tree/master/reports/appendix/Appendix.pdf" target="_blank">Appendix</a></font>*
 
-When we look at property crimes in Figure 7, we again see, apart from the 5th and 4th school year prior to the implementation, rather similar pre-treatment trends. However, visually there is no clue that the implementation led to an effect on property crime, as all groups experienced a similar downwards trend.
+When we look at property crimes in Figure 8, we again see, apart from the 5th and 4th school year prior to the implementation, rather similar pre-treatment trends. However, visually there is no clue that the implementation led to an effect on property crime, as all groups experienced a similar downwards trend.
 
 ## Results
 To quantify the effect of the Safe Passage program, which we already visually saw in the two figures above, McMillen et al. (2017) use a Poisson regression. Details on the specification can be found in the [Appendix](https://github.com/binste/chicago_safepassage_evaluation/tree/master/reports/appendix/Appendix.pdf){:target="_blank"}. Following the same estimation strategy, I found that the Safe Passage program reduces violent crime by 12.5% on average between 6.30 am and 5.30 pm for the week days of a school year. The result is therefore very similar to their findings of a 13.4% reduction. Furthermore, no displacement effects to the adjacent areas were found. For property crime, the estimation finds no evidence of a reduction in crime, neither in the original paper nor in my own.
