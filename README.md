@@ -29,7 +29,7 @@ For a static version of the same Jupyter notebook, click on
 [![nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.jupyter.org/github/binste/chicago_safepassage_evaluation/blob/master/notebooks/5_analysis/1.0-binste-analyze-crime-results-census-block-level.ipynb)
 
 ### Run analysis on your own machine
-Due to resource constraints on the above used service mybinder.org, to run the estimations of the Poisson regressions or even start out from the raw data files, you need to do this on your local machine. You might want to choose one of the following two options, depending on your knowledge and your goal.
+Due to resource constraints on the above used service called mybinder.org, you can not run the estimations of the Poisson regression or even start out from the raw data files in your browser. If you want to do that, you need to do it on your own machine. To do it, you might want to choose one of the following two options, depending on your knowledge and your goal.
 
 #### Set up a conda environment
 If you want to continue working on this project, your best option might be to clone the repository:
@@ -50,9 +50,7 @@ See [Order of execution](#order-of-execution) on how to proceed.
 This approach should give you the exact same Python and R version as well as the same versions of the main packages used. However, system dependencies might differ and I was not able to test it on a Windows machine. Should you experience any problem with this, you might want to try out the next approach.
 
 #### Run it in a Docker container
-If you want to rerun the analysis in an isolated and tested environment, you can use the amazing tool repo2docker. It will copy the repository on your own computer and setup everything for you in an isolated and OS independent environment (using Docker).
-
-However, if you are not familiar with Docker, it is not straightforward to save any changes you make to a notebook etc.
+If you want to rerun the analysis in an isolated and tested environment, you can use the amazing tool repo2docker. It will copy the repository on your own computer and setup everything for you in an isolated and OS independent environment (using Docker). However, if you are not familiar with Docker, it is not straightforward to save any changes you make to the files.
 
 1. Install the [Docker Community Edition](https://store.docker.com/search?type=edition&offering=community) for your operating system
 2. Set the available memory for Docker to 4GB.
@@ -74,7 +72,7 @@ See [Order of execution](#order-of-execution) on how to proceed.
 ### Data
 For a detailed description of all data sources used, see the section "Data" in the Appendix (XXX).
 
-With the exception of the crime dataset, all raw data files are provided under `data/raw`. The crime dataset is over 1.5 GB and could therefore not be hosted on GitHub. However, the notebook in the folder `0_download_data` will by default download it for you and put it in the correct folder. More on the exact order of execution in the next section The information on crimes should not change much for the years used in this analysis and therefore a download from the original source should work.
+With the exception of the crime dataset, all raw data files are provided under `data/raw`. The crime dataset is over 1.5 GB and could therefore not be hosted on GitHub. However, the notebook in the folder `0_download_data` will by default download it for you and put it in the correct folder. The information on crimes should not change much for the years used in this analysis and therefore a download from the original source should work.
 
 Some of the processed datasets are included. However, the dataset used to estimate the Poisson regressions (`est_df`) could, due to its size, not be uploaded to GitHub. It will be reproduced if you follow the order of execution explained in the following.
 
@@ -100,4 +98,4 @@ As the analysis notebooks are probably of the most interest, as they produce the
 > **Tip**: To view static versions of the Jupyter notebooks in your browser, you can paste their url into [Jupyter nbviewer](http://nbviewer.jupyter.org/).
 
 ### Hardware
-I used a MacBook Pro (macOS High Sierra 10.13.5) 3.1 GHz Intel Core i5 with 16 GB RAM to develop the project. No graphic card is needed. The end results were also tested and replicated in a Docker container, as explained above.
+I used a MacBook Pro (macOS High Sierra 10.13.5) 3.1 GHz Intel Core i5 with 16 GB RAM to develop the project. No graphic card is needed. The end results were tested and replicated in a Docker container, as explained [above](#run-it-in-a-docker-container).
