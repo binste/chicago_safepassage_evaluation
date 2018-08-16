@@ -11,6 +11,8 @@ guide:
         url: /introduction
       - title: "Estimation strategy and results"
         url: /estimation_and_results
+      - title: "Appendix"
+        url: https://github.com/binste/chicago_safepassage_evaluation/blob/master/reports/appendix/Appendix.pdf
   - title: Where to go next
     children:
       - title: "A Basic Guide to Reproducible Research"

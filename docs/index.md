@@ -2,7 +2,7 @@
 title: Overview
 header:
     overlay_image: /figures/accident-barrier-caution-923681_cropped.jpg
-    caption: "Photo credit: [Kat Wilcox](https://www.pexels.com/photo/crime-scene-do-not-cross-signage-923681/)"
+    caption: "<small>Photo credit: [Kat Wilcox](https://www.pexels.com/photo/crime-scene-do-not-cross-signage-923681/)</small>"
 permalink: ./
 author_profile: true
 share: true
