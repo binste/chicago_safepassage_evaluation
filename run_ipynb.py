@@ -1,6 +1,6 @@
 """Runs all Jupyter notebooks in given folders. Folder names (one or multiple)
-can be passed as arguments to the script. Folders are relative to
-the baseline folder, which usually is "notebooks".
+can be passed as arguments to the script and can be provided relative to the
+folder which contains all notebooks (e.g. "notebooks").
 Notebooks are run with their enclosing folder as working directory.
 
 Example
