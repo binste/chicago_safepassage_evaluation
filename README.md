@@ -4,7 +4,7 @@
 
 - [Overview](#overview)
 - [Replicate analysis](#replicate-analysis)
-    - [Figures for website and comparison to McMillen et al. (2017)](#figures-for-website-and-comparison-to-mcmillen-et-al-2017)
+    - [Compare results to McMillen et al. (2017) and replicate figures from website](#compare-results-to-mcmillen-et-al-2017-and-replicate-figures-from-website)
     - [Run analysis on your own machine](#run-analysis-on-your-own-machine)
         - [Set up a conda environment](#set-up-a-conda-environment)
         - [Run it in a Docker container](#run-it-in-a-docker-container)
@@ -14,27 +14,22 @@
     - [Hardware](#hardware)
 
 ## Overview
-This repository contains the code and data for an analysis of the effect of Chicago's Safe Passage program on violent crime counts along the guarded routes. The before mentioned program aims at keeping the students safe on their way to school. An introduction on the topic and a summary of this analysis and the results can be found on the corresponding [website](https://binste.github.io/chicago_safepassage_evaluation/).
+This repository contains an analysis of the effect of Chicago's Safe Passage program on crime counts. The program aims at keeping students safe on their way to school by posting civilian guards along various routes to the participating schools. The empirical approach chosen for the analysis follows one of the specifications in the working paper ["Do More Eyes on the Street Reduce Crime? Evidence from Chicago’s Safe Passage Program"](https://ignaciomsarmiento.github.io/assets/Safe_Passage_WP.pdf) by Daniel McMillen, Ignacio Sarmiento-Barbieri, and Ruchi Singh from June 22, 2017, and is an attempt to replicate their findings. For more information on the replication, as well as an introduction on the topic and a summary of the analysis and the results, see the corresponding [website](https://binste.github.io/chicago_safepassage_evaluation/).
 
-The policy evaluation is one of two parts of my master thesis (2018) at the University of Zurich under the supervision of [Prof. Pietro Biroli](https://sites.google.com/site/pietrobiroli/home). The second one is [A Basic Guide to Reproducible Research](https://binste.github.io/basic_reproducibility_guide/), where this analysis serves as an example.
-
-The empirical approach chosen for this analysis follows one of the specifications in the working paper ["Do More Eyes on the Street Reduce Crime? Evidence from Chicago’s Safe Passage Program"](https://ignaciomsarmiento.github.io/assets/Safe_Passage_WP.pdf) by Daniel McMillen, Ignacio Sarmiento-Barbieri, and Ruchi Singh from June 22, 2017. It is an attempt to replicate their main finding of a significant reduction in violent crime due to the Safe Passage program.
-
-For a more detailed description of the data used, the empirical strategy as well as its limitations, see the [Appendix](./reports/appendix/Appendix.pdf).
+This policy evaluation is one of two parts of my master thesis (2018) at the University of Zurich under the supervision of [Prof. Pietro Biroli](https://sites.google.com/site/pietrobiroli/home). The second one is [A Basic Guide to Reproducible Research](https://binste.github.io/basic_reproducibility_guide/), where this analysis serves as an example.
 
 ## Replicate analysis
-### Figures for website and comparison to McMillen et al. (2017)
-By clicking on the badge below, you can replicate the figures used on the website analysis directly in your browser without any setup required and compare the results to the ones of McMillen et al. (2017).
+### Compare results to McMillen et al. (2017) and replicate figures from website
+By clicking on the badge below, you can compare the results to the ones of McMillen et al. (2017) and replicate the figures used on the website  of the analysis, all directly in your browser without any setup required.
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binste/chicago_safepassage_evaluation/master?filepath=notebooks%2F5_analysis%2F1.0-binste-analyze-crime-results-census-block-level.ipynb)
 
-For a static version of the same notebook, click on
+For a static version of the same Jupyter notebook, click on
 
 [![nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.jupyter.org/github/binste/chicago_safepassage_evaluation/blob/master/notebooks/5_analysis/1.0-binste-analyze-crime-results-census-block-level.ipynb)
 
-
 ### Run analysis on your own machine
-Due to resource constraints on the above used service, to run the estimations of the poisson regressions or even start out from the raw data files, you need to do this on your local machine. You might want to choose one of the following two options, depending on your knowledge and your goal.
+Due to resource constraints on the above used service mybinder.org, to run the estimations of the Poisson regressions or even start out from the raw data files, you need to do this on your local machine. You might want to choose one of the following two options, depending on your knowledge and your goal.
 
 #### Set up a conda environment
 If you want to continue working on this project, your best option might be to clone the repository:
@@ -62,20 +57,19 @@ However, if you are not familiar with Docker, it is not straightforward to save 
 1. Install the [Docker Community Edition](https://store.docker.com/search?type=edition&offering=community) for your operating system
 2. Set the available memory for Docker to 4GB.
     * On Mac this can be set by clicking on the Docker symbol in the status bar -> Preferences -> Advanced
-2. Install repo2docker from source to get the latest version:
+3. Install repo2docker from source to get the latest version:
     ```bash
     git clone https://github.com/jupyter/repo2docker.git
     cd repo2docker
     pip install -e .
     ```
-3. Build and launch docker image of GitHub repository:
+4. Build and launch Docker image of GitHub repository:
     ```bash
     jupyter-repo2docker https://github.com/binste/chicago_safepassage_evaluation
     ```
-4. After it run through, there is an URL, which will lead you to a running Jupyter notebook server. There is currently a bug when using jupyter-repo2docker, where the displayed URL might not work without a slight modification. To fix it, change the host name before the port to `127.0.0.1`. Example: `http://d2f78b8191fd:55484/?token=...` becomes `http://127.0.01:55484/?token=...`.
+5. After it run through, there is an URL, which will lead you to a running Jupyter notebook server. There is currently a bug with Jupyter notebooks and Docker, where the displayed URL might not work without a slight modification. To fix it, change the host name before the port to `127.0.0.1`. Example: `http://d2f78b8191fd:55484/?token=...` becomes `http://127.0.0.1:55484/?token=...`.
 
 See [Order of execution](#order-of-execution) on how to proceed.
-
 
 ### Data
 For a detailed description of all data sources used, see the section "Data" in the Appendix (XXX).
