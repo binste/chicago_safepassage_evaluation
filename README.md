@@ -53,7 +53,7 @@ This approach should give you the exact same Python and R version as well as the
 If you want to rerun the analysis in an isolated and tested environment, you can use the amazing tool repo2docker. It will copy the repository on your own computer and setup everything for you in an isolated and OS independent environment (using Docker). However, if you are not familiar with Docker, it is not straightforward to save any changes you make to the files.
 
 1. Install the [Docker Community Edition](https://store.docker.com/search?type=edition&offering=community) for your operating system
-2. Set the available memory for Docker to 4GB.
+2. Set the available memory for Docker to 4GB and the number of CPU cores to 2.
     * On Mac this can be set by clicking on the Docker symbol in the status bar -> Preferences -> Advanced
 3. Install repo2docker from source to get the latest version:
     ```bash
@@ -82,7 +82,7 @@ To reconstruct the results starting out from the raw data, run all notebooks in 
 Should you want to run the whole pipeline with one command you can do this using the Python script `run_ipynb.py` which resides in the root folder of the project. Note however, that this will not give you much of an indication on the progress of the computations, you'll only see the name of the notebook currently processed. In the "Home" view of Jupyter notebook (where you can open files), click on the top right on "New" -> "Terminal". Now you should be able to run the following command to rerun the whole analysis from the raw data files to the end results:
 
 ```bash
-python run_ipynb.py 0_download_data 1_prepare_data 2_crime_database 3_match 4_combine_for_analysis 5_analysis
+python run_ipynb.py 0_download_data 1_prepare_data 2_set_up_crime_database 3_match_datasets 4_combine_for_analysis 5_analysis
 ```
 
 This can take up to multiple hours, depending on your hardware.
