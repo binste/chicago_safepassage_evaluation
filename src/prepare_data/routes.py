@@ -3,23 +3,27 @@ import geopandas as gpd
 import pandas as pd
 
 
-def read_routes_file(sh_path, SY):
-    """Reads shapefile and adds given school year as column
+def read_routes_file(shapefile_path, school_year):
+    """Reads shapefile of Safe Passage route
+    and adds the respective school year as a column
 
     Parameters
     ----------
-    sh_path : str
-        Full path to shapefile
+    shapefile_path : str
+        Path to shapefile which should be read
 
-    SY : str
-        School year in the format of 'SYXXYY'
+    school_year : str
+        School year in the format of 'SYXXYY',
+        for example 'SY1516' for school year 2015-2016
 
     Returns
     -------
     gpd.DataFrame
+        Contains parsed shapefile as well as corresponding school year
+        as column 'school_year'
     """
-    routes = gpd.read_file(sh_path)
-    routes['school_year'] = SY
+    routes = gpd.read_file(shapefile_path)
+    routes['school_year'] = school_year
     return routes
 
 
