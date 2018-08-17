@@ -39,7 +39,7 @@ git clone https://github.com/binste/chicago_safepassage_evaluation
 and then install and activate the conda environment by running:
 ```bash
 conda env create -f environment.yml
-source activate speval
+conda activate speval
 ```
 Now start a Jupyter notebook server in the root directory of the project:
 ```bash
@@ -50,7 +50,7 @@ See [Order of execution](#order-of-execution) on how to proceed.
 This approach should give you the exact same Python and R version as well as the same versions of the main packages used. However, system dependencies might differ and I was not able to test it on a Windows machine. Should you experience any problem with this, you might want to try out the next approach.
 
 #### Run it in a Docker container
-If you want to rerun the analysis in an isolated and tested environment, you can use the amazing tool repo2docker. It will copy the repository on your own computer and setup everything for you in an isolated and OS independent environment (using Docker). However, if you are not familiar with Docker, it is not straightforward to save any changes you make to the files.
+If you want to rerun the analysis in an isolated and tested environment, you can use the amazing tool repo2docker. It will copy the repository on your own computer and setup everything for you in an isolated and OS independent environment (using Docker). However, if you are not familiar with Docker, it is not always straightforward to save changes you make to the files.
 
 1. Install the [Docker Community Edition](https://store.docker.com/search?type=edition&offering=community) for your operating system
 2. Set the available memory for Docker to 4GB and the number of CPU cores to 2.
