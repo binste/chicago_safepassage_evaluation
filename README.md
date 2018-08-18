@@ -15,7 +15,7 @@ This repository contains an example project for [A Basic Guide to Reproducible R
 This policy evaluation is part of my master thesis (2018) at the University of Zurich under the supervision of [Prof. Pietro Biroli](https://sites.google.com/site/pietrobiroli/home).
 
 ## Software environment
-The data preparation was done in Python using Jupyter notebooks. R was used for the estimation of the Poisson regression. Details on the exact versions as well as additional packages can be found in the [`environment.yml`](environment.yml) file. As an operating system, macOS High Sierra 10.13.5 was used.
+The data preparation was done in Python using Jupyter notebooks. R was used for the estimation of the Poisson regression. Details on the exact versions as well as additional packages can be found in the [`environment.yml`](environment.yml) file, which can also be used to recreate the conda environment used to create this analysis. As an operating system, macOS High Sierra 10.13.5 was used.
 
 > **Note**: This repository is [repo2docker](https://github.com/jupyter/repo2docker) compatible.
 
