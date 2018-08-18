@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Introduction
 header:
     overlay_image: /figures/accident-barrier-caution-923681_cropped.jpg
     caption: "<small>Photo credit: [Kat Wilcox](https://www.pexels.com/photo/crime-scene-do-not-cross-signage-923681/)</small>"
@@ -7,7 +7,6 @@ permalink: ./
 author_profile: true
 share: true
 toc: false
-sidebar: false
 classes: wide
 ---
 **ATTENTION**: This is a work in progress and subject to major changes.

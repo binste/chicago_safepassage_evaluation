@@ -1,11 +1,8 @@
-main:
-  - title: "Overview"
-    url: "/"
-  - title: "Evaluation"
-    url: "/introduction"
-
 guide:
+  - title: Introduction
+    url: "/"
   - title: Evaluation
+    url: /introduction
     children:
       - title: "Introduction"
         url: /introduction
@@ -14,6 +11,7 @@ guide:
       - title: "Appendix"
         url: https://github.com/binste/chicago_safepassage_evaluation/blob/master/reports/appendix/Appendix.pdf
   - title: Where to go next
+    url: https://binste.github.io/basic_reproducibility_guide/
     children:
       - title: "A Basic Guide to Reproducible Research"
         url: https://binste.github.io/basic_reproducibility_guide/
