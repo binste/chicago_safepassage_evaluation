@@ -40,6 +40,9 @@ dependencies:
   - widgetsnbextension=3.2.1
   - xlrd=1.1.0
   - r-essentials=3.4.3
+  - r-base=3.4.3
+  - r-tidyverse=1.2.1
+  - r-rlang=0.1.6
   - rpy2=2.9.1
   - pip:
     - cython==0.28.2
