@@ -62,5 +62,6 @@ data/processed/est_df*
 data/raw/Crimes_-_2001_to_present.csv
 data/processed/crimes.db
 
-# TODO: Can be deleted before submitting to University
 reports/appendix/*
+!reports/appendix/Appendix.pdf
+!reports/appendix/Appendix.tex

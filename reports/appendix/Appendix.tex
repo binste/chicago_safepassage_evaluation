@@ -1,0 +1,260 @@
+\documentclass[]{article}
+
+\usepackage{listings}
+\usepackage{longtable}
+\usepackage{etex} %Because of many packages --> Extended TeX.
+\usepackage[left=1in, right=1in]{geometry} %Helps to structure the paper layout.
+\usepackage[Lenny]{fncychap} %Design of the thesis.
+\usepackage[utf8]{inputenc} %Due to vowels.
+\usepackage[british]{babel} %Define the language style.
+\usepackage{dsfont} %Nice style for the indicator function.
+\usepackage{fancyhdr} %To customize the headers and footers.
+\usepackage{booktabs} %In case you need \cmidrule or \addlinespace in tables.
+\usepackage[hang,bottom,stable,multiple]{footmisc} %Style of footnotes.
+% use sans-serif font for captions
+\usepackage[capposition=top, font=sf, capbesideposition=outside,capbesidesep=quad]{floatrow}
+\usepackage{array}
+\usepackage{multirow}
+%Load some mathematical packages.
+\usepackage{amsmath}
+\usepackage{threeparttable}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage[sort,round]{natbib} %For the bibliography.
+\usepackage{amsthm} %For theorems, definitions etc.
+\usepackage{thmtools} %For theorems, definitions etc.
+\usepackage{setspace} %Use double spacing.
+\usepackage{graphicx,listings,xcolor,textcomp} %For the graphics, listings etc.
+% captions in sans-serif font for caption package
+\usepackage[font=sf, singlelinecheck = false]{caption}
+\captionsetup[table]{justification = raggedright, singlelinecheck = off}
+\usepackage{hyperref} %Must be loaded at the end.
+\usepackage{arydshln} %Due to the capability to draw horizontal/vertical dash-lines.
+\usepackage{array,hhline} %To create tables and matrices.
+\usepackage{rotating} %To rotate a table.
+\usepackage{tabularx} %An extended version of tabular.
+
+%Setup of the reference links.
+\hypersetup{
+	colorlinks=false,
+	linkcolor=blue,
+	citecolor=blue,
+	filecolor=magenta,
+	urlcolor=blue}
+
+%Define some reasonable margins.
+\setlength{\textwidth}{6.6in}
+\setlength{\textheight}{8.8in}
+\setlength{\topmargin}{-0.1in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\parskip}{1mm}
+\setlength{\parindent}{0pt}
+
+\bibliographystyle{abbrvnat} %Reference style.
+
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+%opening
+\title{\textsf{Appendix\\Chicago's Safe Passage Program to Prevent Crime: \\Is It Worth the Dime?}}
+\author{\textsf{Stefan Binder}}
+\date{August 22nd, 2018}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+\section{Introduction}
+This Appendix belongs to the website \url{https://binste.github.io/chicago_safepassage_evaluation/}, which gives an introduction to the project, and presents the empirical strategy as well as the results in a non-formal way. The following sections provide more in-depth information on the respective topics.
+
+\section{McMillen et al. (2017)}
+This section provides a more detailed description of \cite{mcmillen2017}\footnote{At the time of submission of this thesis, \cite{mcmillen2017} is under "revise and resubmit" at the Journal of Urban Economics.}, with a focus on context, research questions, and results.
+
+\subsection{Context}
+The work by \cite{mcmillen2017} builds upon a vast body of crime prevention literature. As described in the introduction of their paper, previous work has shown that the deployment of police forces to crime hotspots can significantly reduce crime in the targeted areas (see \citealt{di2004police}, \citealt{klick2005using},  \citealt{draca2011panic}, \citealt{weisburd2009hot}, \citealt{braga2014effects}, \citealt{lum2014evidence}). However, a stronger involvement of the community itself might provide a viable alternative to an increased presence of the police (\citealt{krivo2014reducing}). To examine this claim, \cite{mcmillen2017} look at the example of Chicago's Safe Passage program, where civilian guards are deployed along designated high-risk school routes.\footnote{For an introduction on the Chicago's Safe Passage program, see the website at \url{https://binste.github.io/chicago_safepassage_evaluation/}.}
+
+\subsection{Crime}
+\cite{mcmillen2017} use various specifications to assess the effect of the program on crime. The main specification is very similar to the one replicated in this project. The only difference lies in the units of observation, which are artificially constructed cells of one eight by one eighth miles instead of census blocks. I decided to replicate their results derived on the basis of census blocks, as for these, the same boundaries as \cite{mcmillen2017} used were available online. Their main specification finds a reduction in violent crime of an average of 14\% due to the program, but no statistically significant effect on the number of property crimes. There is no evidence of displacement effects into neighboring areas caused by the program. \cite{mcmillen2017} furthermore show that the reduction in crime is persistent throughout the implementation period and does not fade out over the years. \\
+
+The  strategy of \cite{mcmillen2017} to estimate the effect of the program on crime as well as the results related to violent and property crimes are further described on the website, as well as in sections \ref{sec: empstrategy} and \ref{sec: mainresults} of this Appendix.
+
+\subsubsection{Cost-benefit analysis}
+To make these findings more tangible for policy makers, \cite{mcmillen2017} performed a cost-benefit analysis of the Safe Passage program with respect to the reduction in crime. They estimate that the program accrues benefits of around \$100 million a year, based on a commonly used estimate for the willingness to pay to reduce crime. For the school year 2015-2016, the total costs of the program amounted to  \$17.8 million.  \cite{mcmillen2017} conclude that Chicago's Safe Passage program therefore represents a cost-efficient option to reduce crime.
+
+
+\subsection{Attendance}
+In addition to crime counts, \cite{mcmillen2017} furthermore look at the effect of the implementation of the Safe Passage program on attendance rates at schools. Using a similar difference in differences approach as for the crimes, with the change in attendance rate per school as the outcome variable, they find a decline of 2.5 percentage points in the rate of absenteeism. As control group, public schools are used which are not yet part of the program. To address the concerns of the relative similarity between control and treated schools, \cite{mcmillen2017} show that the results are robust to only using schools as controls, which are in the same community areas as the treated ones. In another estimation, each treated school is matched to two control schools using propensity score matching based on pre-program attendance, school characteristics, as well as census block group characteristics. The results are again consistent with the baseline estimation. \\
+
+The results by \cite{mcmillen2017} therefore suggest that involving members of the community can be a cost-effective way to persistently curb crime as well as have a positive effect on school attendance, through deterring criminals.\footnote{To my knowledge, the only other analysis of the Chicago Safe Passage program was conducted by \cite{dnainfo}, and compares crime counts for 64 Safe Passage routes between the school year of 2012-2013 and 2014-2015. He found, that crime decreased between 6am and 6pm on school days by 26\% between the two school years. Note that it is not further specified if this refers to all reported crime incidents or specific subcategories. However, their comparison cannot account for other factors which could have caused the decline.}
+
+\section{Data}
+\label{sec: data}
+Following \cite{mcmillen2017}, for the replication I mostly used data sources which are available online for free. The only exception is the information, on in which year the Safe Passage program was implemented at what school. This data was obtained via a Freedom of Information Act (FOIA) request and is now, together with the other raw data files (with the exception of the crimes dataset, due to its size), available on the GitHub repository of this analysis.\footnote{See \url{https://github.com/binste/chicago_safepassage_evaluation/tree/master/data/raw}} More information on the raw data files such as when they were downloaded as well as the corresponding URLs can be found in the Jupyter notebook \textit{notebooks/0\_download\_data/0.0-bis-download-data.ipynb}.\footnote{See \url{https://github.com/binste/chicago_safepassage_evaluation/blob/master/notebooks/0_download_data/0.0-binste-download-data.ipynb}} \\
+
+The data preparation was done in Python using the following packages:\footnote{This is a non-exhaustive list and dependencies of these packages might not have been considered. Citations are provided were found on any official website of the package.} numpy (\citealt{oliphant2006guide}), pandas (\citealt{mckinney2010data}), geopandas, altair, matplotlib (\citealt{Hunter:2007}), sqlalchemy, requests, tqdm (\citealt{casper_da_costa_luis_2018_1251290}), shapely (\citealt{casper_da_costa_luis_2018_1251290}), ipywidgets, and Jupyter notebook (\citealt{Kluyver:2016aa}).
+
+
+\subsection{Crimes}
+\label{sec: crimes}
+The City of Chicago's Police Department provides extensive information on all reported crime incidents since 2001 through the Chicago Data Portal.\footnote{\url{https://data.cityofchicago.org/}} The dataset includes date and time of the reported occurrence of a crime as well as an address and corresponding GPS coordinates. The information on the location of the crimes are slightly obfuscated to the level of the corresponding census block. However, this still allows to aggregate accurate crime counts on the block level, which will be the level of spatial granularity used in this analysis. For the relevant time period of 2006-01-01 to 2016-06-30, there are 3,736,428 crimes reported. Out of all these, we are only interested in so-called property crimes (1,189,218) and violent crimes (313,250). The categorization in the raw data set is done according to the Illinois Uniform Crime Reporting (IUCR) code, which adheres to the FBI Uniform Crime Reporting (UCR) program.\footnote{See \url{https://ucr.fbi.gov/}, accessed on 5 May 2018.} See Table \ref{tab:crime_categories} for the definitions of the two categories.
+
+\begin{table}[H] \centering
+	\caption{Relevant crime categories}
+	\label{tab:crime_categories}
+	\begin{threeparttable}
+		\begin{tabular}{ll}
+			\hline \\
+			\textbf{Crime category} & \textbf{Uniform Crime Reporting (UCR) code and description} \\
+			\hline \\
+			Violent crime &  \tabitem Homicide 1st \& 2nd degree (01A)\\
+			& \tabitem Criminal sexual assault (02) \\
+			& \tabitem Robbery (03) \\
+			& \tabitem Aggravated assault (04A) \\
+			& \tabitem Aggravated battery (04B) \\
+			\hline \\
+			Property crime & \tabitem Burglary (05) \\
+			& \tabitem Larceny (06) \\
+			& \tabitem Motor vehicle theft (07) \\
+			& \tabitem Arson (09) \\
+			\hline
+		\end{tabular}
+		\begin{tablenotes}[para,flushleft]
+			Source: \url{http://gis.chicagopolice.org/clearmap_crime_sums/crime_types.html}, accessed on 28 April 2018
+		\end{tablenotes}
+	\end{threeparttable}
+\end{table}
+
+As information on the location of the crime is essential for the analysis, crimes with missing GPS coordinates were dropped. This affects a total of 14,661 incidents out of the violent and property crimes. The number of crimes with missing GPS coordinates varies widely over the years. However, in and of itself this does not pose a problem for the chosen estimation strategy. Problematic would be a systematic difference between treatment and control blocks.\footnote{Some of the crimes with missing GPS coordinates provide an address from which the coordinates could be recovered by using a geocoding web service. As these services are not free of charge for such a large number of observations, it was not done for this analysis. Recovering the missing GPS coordinates would give the ability to check for any patterns which could pose a threat to the internal validity of the estimation.} \\
+
+Following \cite{mcmillen2017}, I only consider crimes which took place during school days, i.e. I drop incidents which occurred on a weekend or in the two summer months July and August. Furthermore, I follow the restriction of dropping crimes that happened outside of the presence hours of the guards (before 6.30am or after 5.30pm).\footnote{The exact times are school specific and unknown.} After matching the crimes via their location with the census blocks, one obtains a total of 485,363 reported crime incidents. \\
+
+\cite{mcmillen2017} list several limitations of the dataset, such as that the data only contains crimes which are reported to the police and is therefore not an exhaustive list of all crime incidents. This could pose a threat to the internal validity of the estimates if crimes were systematically reported differently in the treated and control blocks, and if this correlated with the implementation of the program. However, there does not seem to be an obvious reason why this should be the case.  A further limitation is that the reported time for a crime is approximated on the hour if the exact time is unknown. Reporting errors regarding the exact time of the crime do not pose a threat to the identification strategy used, as crime counts will be aggregated per month.
+
+
+\subsection{Implementation of Safe Passage program}
+\label{sec: foia}
+The data on the initial school year of the Safe Passage program per school was obtained through a FOIA request to the Chicago Public Schools.\footnote{This is presumably the same data as \cite{mcmillen2017} obtained for their analysis, as the number of schools per school year is exactly the same as in Table 1 in \cite{mcmillen2017}. See Table \ref{tab:foia} for a summary.} The initial request can be found on the official CPS FOIA website\footnote{\url{https://cps.edu/About_CPS/Departments/Law/Pages/FOIARequest.aspx}, accessed on 18 August 2018.} by going to the "Archive" and searching for my name.  The provided data unfortunately does not cover school years after 2015-2016. This would be the only additional information needed to extend this analysis and study the effect on the school years 2016-2017 onwards.
+
+Table \ref{tab:foia} summarizes the number of schools added per school year.
+
+\begin{table}[H] \centering
+	\caption{Rollout of Safe Passage program}
+	\label{tab:foia}
+		\begin{threeparttable}
+		\begin{tabular}{ccclcccccc}
+			\cline{4-5} \\
+			& & & \textbf{School year} & \textbf{Number of schools added} \\
+			\cline{4-5} \\
+			&& & 2009-2010 &  35 & &\\ \addlinespace
+			&& & 2010-2011 & 0 && \\ \addlinespace
+			&& &2011-2012 & 0 &\\ \addlinespace
+			&& &2012-2013 & 4 &\\ \addlinespace
+			&& &2013-2014 & 55 &\\ \addlinespace
+			&& &2014-2015 & 39 &\\ \addlinespace
+			&& &2015-2016 & 7 &\\ \addlinespace
+			&& &Total & 140 &\\ \addlinespace
+			\hline
+		\end{tabular}
+		\begin{tablenotes}[para,flushleft]
+			This is an exact replication of Table 1 in \cite{mcmillen2017}.\\
+			In the raw data, the number of schools added prior to the school year 2011-2012 is not contained, and we only know that 35 schools had the program for the school year 2011-2012. For the purpose of this replication, I follow \cite{mcmillen2017} in assuming that these 35 schools were already present in the school year 2009-2010. However, this is an assumption which should be further scrutinized. \\
+			Data source: Data provided through Freedom of Information Act request by Chicago Public Schools. See Section \ref{sec: data} for more information.
+		\end{tablenotes}
+	\end{threeparttable}
+\end{table}
+
+
+
+\subsection{Information on schools and Safe Passage routes}
+The addresses and corresponding GPS coordinates of the schools were obtained from the Chicago Data Portal.\footnote{See \url{https://data.cityofchicago.org/}. For information on when the data was accessed, see Section \ref{sec: data} and the therein referenced notebook.}. The information was available for the school years 2013-2014, 2014-2015, and 2015-2016. The location of earlier years was not required for this analysis, as the location of the schools was not used for the final estimation, but only for exploratory analysis and validation of the locations of the Safe Passage routes.  \\
+
+Shapefiles containing characteristics of the routes such as the corresponding school name, as well as the location of the routes in form of GPS coordinates, were also obtained from the Chicago Data Portal. The portal provided the data for the school years 2013-2014, 2014-2015, and 2015-2016. As there was no exact information on the shapes of the routes prior to 2013-2014, the shapes of 2013-2014 were taken as an approximation. Information on which routes were active was obtained by linking the schools belonging to the routes with the data on the implementation of the program obtained through the FOIA request (see Section \ref{sec: foia}). For some schools where the Safe Passage program was implemented in the school years prior to 2015-2016, no information on the routes could be found for the corresponding school year. For these cases, the location of the same route in the school year 2015-2016 was used. \\
+
+As school names for the same school differed in writing across school years as well as between the school location data and the routes data, I harmonized them manually for the schools which had a designated Safe Passage route at least once. This was done using various online news sources and websites of the schools themselves.\footnote{The dataset containing the harmonized names as well as all corresponding versions can be found in the GitHub repository, see \url{https://github.com/binste/chicago_safepassage_evaluation/blob/master/data/raw/school_names.xlsx}.} The other schools are not used in the analysis, and therefore a manual matching was not necessary. Furthermore, schools were checked for changes in addresses, to identify if they have moved or not.\footnote{A school was identified as changing its location if their was a difference in reported GPS coordinates between school years of more than 500 meters.} A school that changed its location was introduced as a new school at the new location.
+
+\subsection{2010 census block boundaries}
+Block boundaries according to the 2010 Census were obtained through the Chicago Data Portal as shapefile. The same block boundaries were then used for all analyzed school years. For the years prior to 2010, it is unknown if the anonymization of the crime locations (see Section \ref{sec: crimes}) on a block level was done according to the 2000 Census definition. If block boundaries have changed in between, this would lead to some crimes being attributed to a wrong block before 2010.
+
+\section{Empirical strategy}
+\label{sec: empstrategy}
+This section provides additional information on the regression used by \cite{mcmillen2017} -- and therefore also in this analysis -- to evaluate the effect of the Safe Passage program on crime counts on a census block level. See the website for an introduction.
+
+\subsection{Model}
+% TODO:
+% From McMillen:
+% "Given the small size of the geographic areas, we aggregate the number of incidents to months to avoid an excess of zero counts." - p. 9
+% Last paragraph of p. 9. Is about why focusing on counts instead of per capita rates.
+
+% TODO:
+% Mention why Poisson regression
+% Talk about why fixed effects regression -> reason for FE is, that the program was "rolled out in a phased manner".
+
+The effect of the Safe Passage program on violent and property crime counts is estimated using the following Poisson regression:
+
+\begin{equation}
+crime\_count_{it} = \beta \textit{ treated\_block}_{it} + \gamma_1 \textit{ one\_block\_over}_{it} + \gamma_2 \textit{ two\_blocks\_over}_{it} + \delta_i + \lambda_t + e_{it} \label{eq: poisson},
+\end{equation}
+
+where $i$ indexes census blocks and $t$ identifies individual months per school year.\footnote{Observations for the months June and August are excluded as they are outside of a school year, see Section \ref{sec: crimes}.} The dependent variable $crime\_count_{it}$ stands for either the monthly violent or  property crime count.\footnote{See Section \ref{sec: crimes} for a description of how these counts are calculated. \cite{mcmillen2017} use crime counts per fixed unit of land instead of per capita rates, as interest lies in analyzing the effect on the number of crime incidents, instead of on an intensity measure for a given population size. Furthermore,  neither are exact estimates of the number of people living in such a small area available, neither do they reflect the actual daytime population and therefore the actual number of people at risk of becoming victim of a crime (\citealt{grogger2002effects}).}, $treated\_block_{it}$ is an indicator variable taking the value one for blocks in the months that are guarded by Safe Passage personnel, $one\_block\_over_{it}$ and $two\_blocks\_over_{it}$ are indicators for the months after the Safe Passage was enacted and for blocks that are one or two blocks over. $\delta_i$ are block fixed effects to control for time-invariant differences between blocks, and $\lambda_t$  represent time fixed effects to control for time-specific confounders. $e_{it}$ is the error term.\\
+
+The coefficient of interest is given by $\beta$. If the Safe Passage program reduced crime, we would expect a negative estimate for $\beta$. This specification furthermore allows to analyze potential spillover effects of crimes to neighboring census blocks. Spillover effects would show in a positive estimate of $\gamma_1$ or/and $\gamma_2$. If this were the case, $\beta$ would still give us an unbiased estimate of the causal effect of the program. However, the displacement effects would need to be considered when evaluating the benefit of the crime prevention program. Leaving away the variables $\textit{one\_block\_over}_{it}$ and $\textit{two\_blocks\_over}_{it}$ could lead to a downwards-biased estimate of $\beta$ if spillover effects indeed existed, and we would therefore overestimate a possible reduction in crime due to the program. To control for displacement effects in such or similar ways is common in the evaluation of crime prevention policies (see among others \citealt{grogger2002effects}, \citealt{di2004police}, and \citealt{draca2011panic}). \\
+
+I follow \cite{mcmillen2017} in estimating Equation (\ref{eq: poisson}) as a Poisson regression due to the dependent variables (violent or property crime count) being count variables.  \\
+
+The programming language R was used for the estimation of the Poisson regression as well as some minor preprocessing. The relevant packages were glmmML (\citealt{glmmml} as well as tidyverse (\citealt{tidyverse}. The Python package rpy2 was used to interface R.
+
+\section{Main results}
+\label{sec: mainresults}
+Equation (\ref{eq: poisson}) was estimated using data from January 2006 to August 2016, following \cite{mcmillen2017}, for all blocks which had at least once one of the block dummies equal to one.\footnote{It was not clear from the original paper if \cite{mcmillen2017} only included observations up to 5 school years prior to the implementation of a program and 3 school years after the implementation. This restriction would apply for treatment as well as control blocks, whereas for the latter the implementation in the corresponding treatment block would be referenced. However, the results presented in this section are robust to this reduction in the number of observations used. See \textit{notebooks/5\_analysis/1.0-binste-analyze-crime-results-census-block-level.ipynb}} Table \ref{tab:main_reg} presents the results and compares them to the estimation done by \cite{mcmillen2017}.\footnote{The coefficients of the Poisson regression can be interpreted as $(\exp(\beta) - 1) * 100\%$.}
+
+\begin{table}[H] \centering
+	\caption{Estimated coefficients from Poisson regression}
+	\label{tab:main_reg}
+	\begin{threeparttable}
+		\begin{tabular}{@{\extracolsep{5pt}}lcccc}
+			\hline \\
+			& \multicolumn{4}{c}{\textit{Dependent variable:}} \\
+			\cline{2-5} \\
+			& \multicolumn{2}{c}{Violent crime} & \multicolumn{2}{c}{Property crime} \\
+			\cline{2-3} \cline{4-5} \\
+			& Binder (2018) & McMillen et al. (2017) & Binder (2018) & McMillen et al. (2017) \\
+			\cline{2-2} \cline{3-3} \cline{4-4} \cline{5-5} \\
+			Treated block & -0.134\sym{***} & -0.144\sym{***} & -0.004 &  -0.005 \\
+			& (0.025) & (0.036) &  (0.013) & (0.025) \\ \addlinespace
+			One block over & 0.010 & 0.005 &  0.012 & 0.026 \\
+			& (0.024) & (0.029) & (0.013) & (0.024) \\ \addlinespace
+			Two blocks over & -0.004 & 0.044 & 0.022\sym{*} & 0.017 \\
+			& (0.025) & (0.027) & (0.012) & (0.025) \\ \addlinespace
+			Census block FE & Yes & Yes & Yes & Yes \\ \addlinespace
+			Year-month FE & Yes & Yes & Yes & Yes\\ \addlinespace
+			\hline \\
+			Observations & 	1,085,334 & 783,340 & 1,460,786 & 982,832\\
+			\hline
+		\end{tabular}
+		\begin{tablenotes}[para,flushleft]
+			$^{*}$P $<$ 0.1; $^{**}$P $<$ 0.05; $^{***}$P $<$ 0.01.\\
+			Heteroskedasticity-robust standard errors are reported in parantheses. For Binder (2018), standard errors are clustered at the census block level. \cite{mcmillen2017} reported standard errors clustered by Safe Passage routes. See the main text for a discussion. \\
+			Data sources for Binder (2018) columns: See Section \ref{sec: data}. Estimated for time period of January 2006 to August 2016 for all blocks, which had at least once  one of the block dummies equal to one. \\
+			The results by \cite{mcmillen2017} are taken from Table 10 in the original paper.
+		\end{tablenotes}
+	\end{threeparttable}
+\end{table}
+
+When looking at violent crimes as dependent variable, we see that the coefficient of interest, $\beta$ ("Treated block"), could almost exactly be replicated in terms of magnitude, with a point estimate of $-0.134$ compared to the $-0.144$ from \cite{mcmillen2017}, as well as statistical significance. Both the original paper as well as the replication did not find any evidence of spillover effects, which would be captured by the coefficients $\gamma_1$ ("One block over") and $\gamma_2$ ("Two blocks over"). \\
+
+The replication was similarly successful when looking at property crime counts as the dependent variable. No significant causal effect of the program could be found, and the point estimates for $\beta$ are almost exactly the same. However, in my replication, $\gamma_2$ is statistically significant on the 10\% level with a point estimate of $0.022$. \\
+
+The heteroskedasticity-robust standard errors reported in Table \ref{tab:main_reg} are clustered at the level of the individual census block for Binder (2018), therefore allowing for correlated error terms across school years for each block. However, the standard errors reported for \cite{mcmillen2017} are clustered at the level of the Safe Passage routes. I was not able to replicate this clustering, as it was unclear how exactly the clustering by routes was implemented for two reasons. First, a block can have multiple Safe Passage routes assigned to it. Second, the relevant route can change for a block between school years.\footnote{For example, if a block is a "Three over block," but then a new Safe Passage route is established and crosses the "Three over block," it becomes a "Treated block," and its status is now defined by a different route.} \\
+
+Although I was able to replicate the main findings regarding the effect of the program on the crime counts, an obvious difference present in Table \ref{tab:main_reg}, is the number of observations used in the regression. Part of the discrepancy may be due to the fact that I use a newer version of the crime dataset. Blocks with constant (usually 0) crimes over the whole observation period are excluded from the regression due to the block fixed effects ($\delta_i$). In newer versions of the crime dataset, there might have been minor changes, as some crimes were additionally added or received GPS coordinates, which would make them available for the analysis. If, due to the increased number of crimes available, a block now experiences a non-constant crime count, it will no longer be excluded from the regression. However, this mechanism is unlikely to account for the full difference in observations. Therefore, there seems to be a difference in the creation of the estimation datasets, which I was not able to replicate. One other possibility would be the already mentioned restrictions on 5 school years prior and 3 school years after the implementation of the program. However, applied on my estimation dataset this would lead to significantly less observations than \cite{mcmillen2017} have. It therefore seems unlikely to be the reason.\footnote{The reduced estimation dataset yields 569,482 observations for the estimation of the effect on violent crime counts and 844,310 regarding property crime counts as the dependent variable.}
+
+\newpage
+\bibliography{bib_appendix}
+
+\end{document}
