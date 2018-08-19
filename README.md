@@ -17,8 +17,6 @@ This policy evaluation is part of my master thesis (2018) at the University of Z
 ## Software environment
 The data preparation was done in Python using Jupyter notebooks. R was used for the estimation of the Poisson regression. Details on the exact versions as well as additional packages can be found in the [`environment.yml`](environment.yml) file, which can also be used to recreate the conda environment used to create this analysis. As an operating system, macOS High Sierra 10.13.5 was used.
 
-> **Note**: This repository is [repo2docker](https://github.com/jupyter/repo2docker) compatible.
-
 ## Hardware
 The analysis was developed on a 3.1 GHz Intel Core i5 with 16 GB RAM. However, a reproduction of the results was tested and worked with only XXX GB RAM in a Docker container.
 
