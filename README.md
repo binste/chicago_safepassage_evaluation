@@ -21,7 +21,7 @@ The data preparation was done in Python using Jupyter notebooks. R was used for 
 The analysis was developed on a 3.1 GHz Intel Core i5 with 16 GB RAM. However, a reproduction of the results was tested and worked with only 10 GB RAM in a Docker container.
 
 ## Data
-With the exception of the crime dataset, all raw data files are provided under `data/raw`. The crime dataset is over 1.5 GB and could therefore not be hosted on GitHub. However, the notebook in the folder `0_download_data` will by default download it for you and put it in the correct folder. The information on crimes should not change much for the years used in this analysis and a download from the original source should work.
+With the exception of the crime dataset, all raw data files are provided under `data/raw`. The crime dataset is over 1.5 GB and could therefore not be hosted on GitHub. However, the notebook in the folder `0_download_data` will by default download it for you and put it in the correct folder. The information on crimes should not change much for the years used in this analysis and a download from the original source should work. Note, however, that the results still might vary slightly if you reproduce this due to the download of the crimes dataset. If you want exactly the same crimes dataset as I have, open up a GitHub issue and I can look into it.
 
 Some of the processed datasets are included. However, the dataset used to estimate the Poisson regressions (`est_df`) could, due to its size, not be uploaded to GitHub. It will be reproduced if you follow the order of execution explained in the following section.
 
