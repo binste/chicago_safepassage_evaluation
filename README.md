@@ -6,7 +6,7 @@
 - [Order of execution](#order-of-execution)
 - [Analysis notebooks](#analysis-notebooks)
 - [How to run it](#how-to-run-it)
-    - [Run in conda environment](#run-in-conda-environment)
+    - [Run it in a conda environment](#run-it-in-a-conda-environment)
     - [Run it in a Docker container](#run-it-in-a-docker-container)
 
 ## Overview
@@ -18,7 +18,7 @@ This policy evaluation is part of my master thesis (2018) at the University of Z
 The data preparation was done in Python using Jupyter notebooks. R was used for the estimation of the Poisson regression. Details on the exact versions as well as additional packages can be found in the [`environment.yml`](environment.yml) file, which can also be used to recreate the conda environment used to create this analysis. As an operating system, macOS High Sierra 10.13.5 was used.
 
 ## Hardware
-The analysis was developed on a 3.1 GHz Intel Core i5 with 16 GB RAM. However, a reproduction of the results was tested and worked with only XXX GB RAM in a Docker container.
+The analysis was developed on a 3.1 GHz Intel Core i5 with 16 GB RAM. However, a reproduction of the results was tested and worked with only 10 GB RAM in a Docker container.
 
 ## Data
 With the exception of the crime dataset, all raw data files are provided under `data/raw`. The crime dataset is over 1.5 GB and could therefore not be hosted on GitHub. However, the notebook in the folder `0_download_data` will by default download it for you and put it in the correct folder. The information on crimes should not change much for the years used in this analysis and a download from the original source should work.
@@ -49,7 +49,7 @@ As the analysis notebooks are probably of the most interest (they produce the ma
 ## How to run it
 If you are not sure how to set up the software specified in `environment.yml` to rerun the analysis, you can use one of the following two options:
 
-### Run in conda environment
+### Run it in a conda environment
 Download the repository as .zip file from GitHub and unpack it or clone it using:
 ```bash
 git clone https://github.com/binste/chicago_safepassage_evaluation
@@ -71,7 +71,7 @@ This approach should give you the exact same Python and R version as well as the
 Should you have problems with the above approach due to your operating system, you can also run the analysis in a tested and operating-system-independent environment (using Docker). In the following, I will explain all the necessary steps and use the amazing tool repo2docker, which will copy the repository to your own computer and setup everything for you.
 
 1. Install the [Docker Community Edition](https://store.docker.com/search?type=edition&offering=community) for your operating system
-2. Set the available memory for Docker to 4GB XXX and the number of CPU cores to 2.
+2. Set the available memory for Docker to 10 GB and the number of CPU cores to 2.
     * On Mac this can be set by clicking on the Docker symbol in the status bar -> Preferences -> Advanced
 3. Install repo2docker from source to get the latest version:
     ```bash
