@@ -30,6 +30,7 @@ dependencies:
   - kealib=1.4.7
   - pip=10.0.1
   - python=3.6.5
+  - poppler=0.60.1
   - requests=2.19.1
   - scipy=1.1.0
   - seaborn=0.8.1
