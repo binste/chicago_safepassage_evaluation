@@ -1,0 +1,1 @@
+The figures in here need to be manually moved to the corresponding folder in the https://github.com/binste/basic_reproducibility_guide repository.
