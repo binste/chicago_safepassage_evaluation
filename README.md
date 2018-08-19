@@ -1,7 +1,4 @@
  # Chicago's Safe Passage Program to Prevent Crime: Is It Worth the Dime?<!-- omit in toc -->
-
-**ATTENTION**: This is a work in progress and subject to major changes.
-
 - [Overview](#overview)
 - [Software environment](#software-environment)
 - [Hardware](#hardware)
