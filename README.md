@@ -17,26 +17,26 @@ The data preparation was done in Python using Jupyter notebooks. R was used for 
 > **Note**: This repository is [repo2docker](https://github.com/jupyter/repo2docker) compatible.
 
 ## Hardware
-The analysis was developed on a 3.1 GHz Intel Core i5 with 16 GB RAM. However, a reproduction of the results was tested and worked with only XXX GB RAM in a Docker container (see [this section](#run-it-in-a-docker-container) for details).
+The analysis was developed on a 3.1 GHz Intel Core i5 with 16 GB RAM. However, a reproduction of the results was tested and worked with only XXX GB RAM in a Docker container.
 
 ## Data
-With the exception of the crime dataset, all raw data files are provided under `data/raw`. The crime dataset is over 1.5 GB and could therefore not be hosted on GitHub. However, the notebook in the folder `0_download_data` will by default download it for you and put it in the correct folder. The information on crimes should not change much for the years used in this analysis and therefore a download from the original source should work.
+With the exception of the crime dataset, all raw data files are provided under `data/raw`. The crime dataset is over 1.5 GB and could therefore not be hosted on GitHub. However, the notebook in the folder `0_download_data` will by default download it for you and put it in the correct folder. The information on crimes should not change much for the years used in this analysis and a download from the original source should work.
 
 Some of the processed datasets are included. However, the dataset used to estimate the Poisson regressions (`est_df`) could, due to its size, not be uploaded to GitHub. It will be reproduced if you follow the order of execution explained in the following section.
 
-For a detailed description of all data sources used, see the section "Data" in the Appendix (XXX).
+For a detailed description of all data sources used, see the section "Data" in the [Appendix](https://github.com/binste/chicago_safepassage_evaluation/blob/master/reports/appendix/Appendix.pdf).
 
 ## Order of execution
-To reconstruct the results starting out from the raw data, run all notebooks in the `notebooks` folders in order of their numbering. No other scripts have to be run apart from the notebooks. The `src` folder does contain scripts with only functions, which are imported by the notebooks.
+To reconstruct the results starting out from the raw data, run all notebooks in the `notebooks` folders in the order of their numbering. No other scripts have to be run apart from the notebooks. The `src` folder contains scripts with only functions, which are imported by the notebooks.
 
-Should you want to run the whole pipeline with one command you can do this using the Python script `run_ipynb.py` which resides in the root folder of the project:
+Should you want to run the whole pipeline with one command, you can do this using the Python script `run_ipynb.py` which resides in the root folder of the project:
 ```bash
 python run_ipynb.py 0_download_data 1_prepare_data 2_set_up_crime_database 3_match_datasets 4_combine_for_analysis 5_analysis
 ```
 Note however, that this will not give you much of an indication on the progress of the computations, you'll only see the name of the notebook currently processed. This can take up to multiple hours, depending on your hardware.
 
 ## Analysis notebooks
-As the analysis notebooks are probably of the most interest, as they produce the main figures and results, the main two are briefly described in the following. They can be found in the folder `notebooks/5_analysis`.
+As the analysis notebooks are probably of the most interest (they produce the main figures and results), the main two are briefly described in the following. They can be found in the folder `notebooks/5_analysis`.
 
 | Notebook | Description |
 | -------- | ----------- |
